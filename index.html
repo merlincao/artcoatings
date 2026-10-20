@@ -1,2 +1,194 @@
-域名已在 Cloudflare：页面会显示 "Domain already activated"，直接 Connect domain，几秒完成，自动帮你加好 DNS 记录（一条指向 Pages 的 CNAME/APEX）。
-域名在别的注册商：Cloudflare 会给你两条 Nameserver 地址（形如 xxx.ns.cloudflare.com）。你回到域名注册商后台，把该域名的 Nameserver（DNS 服务器）改成这两条，保存。等 DNS 全球生效（通常几分钟到几小时，最多 24 小时），Cloudflare 会自动检测到并完成激活
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>USLION — Storia del Marchio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&family=Inter+Tight:wght@400;500;700&family=Noto+Serif+SC:wght@400;700&family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --bone:#F4F0E8; --cream:#FAF7F2; --ink:#1A1918; --gold:#C49A4A;
+    --terra:#B5532F; --gray:#6D6B69; --border:#E6E6E0; --white:#FFFFFF;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:"Noto Sans SC","Inter Tight",system-ui,sans-serif;
+    background:var(--bone); color:var(--ink); line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1200px;margin:0 auto;padding:0 60px;}
+
+  /* NAV */
+  .nav{
+    background:var(--white); position:sticky; top:0; z-index:10;
+    border-bottom:1px solid var(--border);
+  }
+  .nav .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:22px;padding-bottom:22px;}
+  .brand{display:flex;align-items:baseline;gap:14px;}
+  .brand .word{font-family:"Bodoni Moda",serif;font-size:24px;letter-spacing:.5px;color:var(--ink);}
+  .brand .tag{font-family:"Inter Tight",sans-serif;font-weight:700;font-size:11px;letter-spacing:1px;color:var(--gray);text-transform:uppercase;}
+  .nav-links{display:flex;gap:28px;}
+  .nav-links a{font-family:"Inter Tight",sans-serif;font-weight:500;font-size:13px;color:var(--ink);text-decoration:none;}
+  .nav-links a:hover{color:var(--gold);}
+
+  /* HERO */
+  .hero{padding:84px 0 64px;}
+  .hero .kicker{font-family:"Inter Tight",sans-serif;font-weight:700;font-size:13px;letter-spacing:3px;color:var(--gold);text-transform:uppercase;}
+  .hero h1{font-family:"Bodoni Moda",serif;font-weight:400;font-size:96px;line-height:1;color:var(--ink);margin:18px 0 12px;}
+  .hero .sub{font-family:"Bodoni Moda",serif;font-size:28px;color:var(--terra);}
+  .hero .intro{max-width:660px;margin-top:24px;font-size:17px;line-height:1.65;color:var(--gray);}
+  .hero-img{margin-top:48px;width:100%;height:520px;object-fit:cover;border-radius:2px;display:block;}
+
+  /* TIMELINE */
+  .timeline{padding:100px 0;background:var(--bone);}
+  .tl-head{margin-bottom:56px;}
+  .tl-head .kicker{font-family:"Inter Tight",sans-serif;font-weight:700;font-size:13px;letter-spacing:3px;color:var(--gold);text-transform:uppercase;}
+  .tl-head h2{font-family:"Noto Serif SC",serif;font-weight:700;font-size:40px;color:var(--ink);margin-top:14px;}
+  .tl-head p{max-width:720px;margin-top:16px;font-size:17px;line-height:1.65;color:var(--gray);}
+  .tl-list{display:flex;flex-direction:column;gap:28px;}
+  .card{
+    background:var(--white);border:1px solid var(--border);border-left:3px solid var(--gold);
+    border-radius:2px;padding:36px;
+  }
+  .card .year{font-family:"Bodoni Moda",serif;font-size:32px;color:var(--gold);}
+  .card h3{font-family:"Noto Serif SC",serif;font-weight:700;font-size:21px;color:var(--ink);margin:6px 0 14px;}
+  .card p{font-size:15px;line-height:1.6;color:var(--gray);}
+  .card img{width:100%;height:300px;object-fit:cover;border-radius:2px;margin-top:18px;display:block;}
+
+  /* FOOTER */
+  .footer{background:var(--ink);color:var(--bone);padding:56px 0;}
+  .footer .top{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;}
+  .footer .word{font-family:"Bodoni Moda",serif;font-size:22px;color:var(--bone);}
+  .footer .ftag{font-size:13px;color:#B8B4AE;margin-top:6px;}
+  .footer .bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:28px;padding-top:20px;
+    display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;}
+  .footer .bottom span{font-size:12px;color:#8A8884;}
+
+  @media (max-width:760px){
+    .wrap{padding:0 24px;}
+    .nav-links{display:none;}
+    .hero{padding:56px 0 40px;}
+    .hero h1{font-size:60px;}
+    .hero .sub{font-size:22px;}
+    .hero-img{height:300px;}
+    .timeline{padding:64px 0;}
+    .tl-head h2{font-size:30px;}
+    .card{padding:24px;}
+    .card img{height:220px;}
+    .footer .top{flex-direction:column;align-items:flex-start;}
+  }
+</style>
+</head>
+<body>
+
+  <header class="nav">
+    <div class="wrap">
+      <div class="brand">
+        <span class="word">USLION</span>
+        <span class="tag">Storia del Marchio</span>
+      </div>
+      <nav class="nav-links">
+        <a href="#t">1985</a>
+        <a href="#t">2009</a>
+        <a href="#t">2015</a>
+        <a href="#t">2020</a>
+        <a href="#t">2022</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <div class="kicker">LA STORIA DEL MARCHIO</div>
+      <h1>USLION</h1>
+      <div class="sub">Cronologia dello sviluppo dal 1985</div>
+      <p class="intro">Dal cuore di Palermo alla penisola cinese: la storia di un marchio di pitture decorative nato dalla passione per i materiali naturali e l'artigianato italiano.</p>
+      <img class="hero-img" src="assets/hero.png" alt="Interno di un palazzo siciliano con intonaco in calce" />
+    </div>
+  </section>
+
+  <section class="timeline" id="t">
+    <div class="wrap">
+      <div class="tl-head">
+        <div class="kicker">CRONOLOGIA</div>
+        <h2>Tappe di sviluppo del marchio</h2>
+        <p>Dalla fondazione a Palermo nel 1985 all'affermazione nel mercato cinese: le tappe che hanno definito l'identità di USLION.</p>
+      </div>
+
+      <div class="tl-list">
+
+        <article class="card">
+          <div class="year">1985</div>
+          <h3>Fondazione a Palermo</h3>
+          <p>Il maestro d'arte italiano Pino Daeni fonda il marchio USLION a Palermo, capoluogo della Sicilia. Grazie alla ricca disponibilità locale di materie prime minerali quali calce naturale, roccia vulcanica e pietra leccese, il brand si specializza nella produzione, nella ricerca e sviluppo di pitture decorative e nella tecnologia di applicazione, definendo il posizionamento premium di «tatto originale + estetica visiva».</p>
+          <img src="assets/1985.png" alt="Officina artigiana a Palermo con materiali minerali" />
+        </article>
+
+        <article class="card">
+          <div class="year">2009</div>
+          <h3>Stabilimento dedicato e Villa Belluccelli</h3>
+          <p>Viene realizzato lo stabilimento dedicato alle pitture decorative USLION, chiudendo il ciclo completo dal design alla produzione. Il marchio partecipa inoltre al progetto di decorazione dell'atrio e degli spazi d'arte di Villa Belluccelli, applicando le pitture decorative a spazi residenziali di lusso e affermando il proprio ruolo di riferimento nel settore dell'architettura d'eccellenza.</p>
+          <img src="assets/2009.png" alt="Stabilimento e villa con finiture artistiche" />
+        </article>
+
+        <article class="card">
+          <div class="year">2015</div>
+          <h3>Espansione in Europa e nei mercati internazionali</h3>
+          <p>Il marchio si espande ufficialmente in Europa e in altri mercati internazionali, avviando una strategia globale; i prodotti entrano in residenze premium e spazi commerciali di numerosi paesi.</p>
+        </article>
+
+        <article class="card">
+          <div class="year">2018 – 2025</div>
+          <h3>Ristrutturazione di Villa Lava</h3>
+          <p>Partecipazione approfondita alla ristrutturazione di Villa Lava — progetto che fonde il restauro di una storica casetta dei pescatori degli anni '900 con nuove addizioni panoramiche sul mare, completato nel 2025. Le pitture decorative USLION, con la loro unica espressività materica, diventano il medium chiave che collega storia e modernità, natura e architettura.</p>
+          <img src="assets/2018-2025.png" alt="Villa sul mare su roccia vulcanica" />
+        </article>
+
+        <article class="card">
+          <div class="year">13 ottobre 2020</div>
+          <h3>Ingresso nel mercato cinese</h3>
+          <p>Viene ufficialmente costituita la «Hangzhou Buleide New Materials Co., Ltd.», agente generale per la Cina, che firma l'importazione delle pitture decorative USLION 美洲狮 (Puma) dall'Italia, avviando la strategia di penetrazione del mercato cinese.</p>
+        </article>
+
+        <article class="card">
+          <div class="year">Marzo 2021</div>
+          <h3>Nasce la Business School</h3>
+          <p>Nasce la Hangzhou Buleide Business School, istituto professionale di formazione sulle pitture decorative, impegnato nella coltivazione di talenti del settore e nell'output standardizzato della tecnologia.</p>
+        </article>
+
+        <article class="card">
+          <div class="year">6 agosto 2021</div>
+          <h3>Riconoscimento di settore</h3>
+          <p>USLION ottiene il riconoscimento di «Membro della Filiale Rivestimenti Edilizi dell'Associazione Cinese dei Materiali per Decorazione delle Pareti», ottenendo il riconoscimento delle autorità di settore.</p>
+        </article>
+
+        <article class="card">
+          <div class="year">2022</div>
+          <h3>Rapida crescita in Cina</h3>
+          <p>Le vendite nella regione cinese superano la soglia dei 10 milioni di yuan, con una rapida crescita dell'accettazione di mercato. Il numero di flagship store nella regione supera 150, la rete di canali si estende a tutto campo e l'influenza del marchio continua a espandersi. Nello stesso anno, il brand entra nel parco industriale Inorganic Coating Valley.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="top">
+        <div>
+          <div class="word">USLION</div>
+          <div class="ftag">Storia del marchio · Dal 1985</div>
+        </div>
+      </div>
+      <div class="bottom">
+        <span>1985–2026 USLION. Tutti i diritti riservati.</span>
+        <span>Marchio di pitture decorative artistiche italiane.</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
