@@ -1,8 +1,9 @@
-# artcoatings.org 开发框架（v0.2 · 国际化版）
+# artcoatings.org 开发框架（v0.3 · 国际化版 · 已跑通）
 
 > **ArtCoatings — Art Coatings Directory** · 面向国际（英语）、定位意大利西西里 · WordPress 本地创作 + 静态导出 + Cloudflare Pages 托管
 >
 > 变更记录：v0.2 起全站转为英文、定位 Sicily Italy、联系邮箱 xzmcart@hotmail.com；新增企业图片抓取（官网）与公开证书标注（未核验）；GitHub 推送改用 PAT（token 不入库）。
+> v0.3：本地环境打通并导入 50 家企业；弃用 Simply Static，改用自研 `tools/static-export.php`（57 页 + 173 资源，根相对自包含）；仓库 `merlincao/artcoatings` 已建并推送。
 
 ---
 
@@ -24,7 +25,7 @@
 
 ```
 D:\wwwroot\artcoatings.org\
-├─ site\                          # WordPress 本体（本地创作，不对外）
+├─ site\                          # WordPress 本体（本地创作，不对外；仅自研主题/插件入库）
 │  ├─ wp-config.php               # 本地 DB 配置
 │  └─ wp-content\
 │     ├─ themes\artcoatings\      # 自研主题（已完成骨架）
@@ -41,15 +42,18 @@ D:\wwwroot\artcoatings.org\
 ├─ html\                          # 静态产物（对外站点根；Cloudflare 输出目录）
 ├─ router.php                     # PHP 内置服务器路由（含 WebP MIME）
 ├─ start-env.bat                  # 启动 MySQL(3398) + PHP(8080)
-├─ .gitignore                     # 忽略本地密钥（.github_token 等，绝不入库）
+├─ deploy.sh                      # 一条龙：静态导出 + 提交 + 推送
+├─ upload-github.bat              # Windows：提交 + 推送（不重新导出）
+├─ .gitignore                     # 忽略本地密钥、WP 核心、抓取原图
 └─ tools\
    ├─ init-db.sql                 # 建库 + 建用户
+   ├─ _init_bootstrap.sql         # mysqld --init-file 引导（免 root 密码时建库建用户）
    ├─ cli-install.php             # 自动安装 WordPress
    ├─ cli-theme.php               # 启用主题 + 初始化站点（含 About 页）
    ├─ export_xlsx.py              # 从 Excel 抽取结构化字段 → data/companies.json
    ├─ scrape_assets.py            # 从官网抓取图片 + 公开证书 → data/images + enriched.json
    ├─ import-companies.php        # 把数据（含本地图片/证书）导入 ac_company
-   ├─ deploy.sh / upload-github.bat # 同步 html/ → GitHub 并推送（PAT 鉴权）
+   ├─ static-export.php           # 静态导出器：抓取 :8080 → html/（含分页发现、资源归集）
    ├─ .github_token               # 本地 GitHub PAT（gitignore，不入库）
    └─ data\                       # 中间产物（companies.json / enriched.json / images/）
 ```
@@ -87,32 +91,49 @@ URL 结构：`/company/{slug}/`、`/news/{slug}/`、`/industry/{term}/`、`/regi
 
 **响应式（移动优先）**：≤639 单列 / ≥640 双列 / ≥768 放大字号与间距 / ≥1024 三列 + 桌面导航 / ≥1200 大屏微调。
 
+无图企业用**衬线字母 monogram** 兜底（非"暂无图片"占位文案），保证卡片视觉一致。
+
 ---
 
 ## 5. 静态导出与部署
 
-### 5.1 导出（推荐 Simply Static）
-1. 后台安装并启用 **Simply Static**
-2. 设置：
-   - *Destination* = **Local Directory → `D:\wwwroot\artcoatings.org\html`**
-   - *Export Type* = Full Site
-   - *URL Rewriting* = **Relative**（确保 html/ 自包含，Cloudflare 可直接托管）
-3. 点击 *Generate Static Files*
+### 5.1 导出（自研 `static-export.php`，已落地）
 
-> 备选：自研导出脚本（按需再写），可精确控制资源归集。
+本地站点需先跑在 `http://127.0.0.1:8080`（`start-env.bat`），然后：
+
+```bash
+<runtime>\php\php.exe tools/static-export.php
+# 可选：--base https://artcoatings.org  改写为绝对生产域名（默认根相对，换域名无需重导）
+```
+
+脚本行为：
+- 抓取首页 / 企业归档 / 50 家企业详情 / 新闻归档 / 页面（About 等），共 **57 个页面**
+- **自动发现分页**：扫描 `page-numbers` 链接，导出 `/company/page/2`、`/company/page/3`（24+24+2 = 50 家，无遗漏无重复）
+- 归集 `wp-content/`（含 uploads 的抓取图片）与 `wp-includes/` 资源，并跟进 CSS 内 `url()` 引用
+- 把 `http://localhost:8080` 改写为**根相对路径**，产物自包含
+- 跳过 WordPress Speculation Rules 等注入 JSON 里的通配片段（如 `/wp-content/uploads/*`），否则每个都会白白触发抓取超时
+
+> 已弃用 Simply Static（3.x 走异步任务队列，无头调用不便）；插件仍留在 `site/wp-content/plugins/` 备用。
 
 ### 5.2 部署（含 GitHub 鉴权）
+
 ```bash
-export ARTCOATINGS_REPO="/c/Users/cjx/artcoatings"   # 本地 git clone 目录
-bash tools/deploy.sh
+bash deploy.sh              # 静态导出 + 提交 + 推送（一条龙）
+bash deploy.sh --push-only  # 只推送现有 html/
 ```
-> 鉴权：GitHub 已不支持密码推送，必须用 PAT。脚本优先读环境变量 `GH_TOKEN`，否则读 `tools/.github_token`（已 gitignore，绝不入库）。推送时通过 `url.insteadOf` 临时注入 token，不会写入任何配置文件。请勿把 PAT 提交到仓库。
+
+Windows 双击 `upload-github.bat` = 提交 + 推送（不重新导出）。
+
+- 仓库：**https://github.com/merlincao/artcoatings**（branch `main`）
+- 鉴权：GitHub 不支持密码推送，必须用 PAT；脚本读 `tools/.github_token`（已 gitignore，绝不入库），token 仅在推送 URL 中临时出现，不写入 `.git/config`
+- 网络：本机访问 github.com 需走代理 `127.0.0.1:7890`（设好 `http_proxy` / `https_proxy` 即可，git 会沿用）
 
 ### 5.3 Cloudflare Pages
+
 - 连接 GitHub `artcoatings` 仓库
 - Framework preset = **None**
 - Build command = 空
-- **Build output directory = `html`**
+- **Build output directory = `html`** ← 关键，填错会发布到仓库根目录
 - Custom domain = `artcoatings.org`
 
 ---
@@ -129,6 +150,7 @@ mysql -h 127.0.0.1 -P 3398 -u root -p < tools/init-db.sql
 # 3) 启用主题 + 初始化
 <runtime>\php\php.exe tools/cli-theme.php
 ```
+
 或直接双击 `start-env.bat` 启动服务，访问 http://localhost:8080/
 
 **管理员**：`admin` / `Admin@2026!ac`
@@ -136,14 +158,24 @@ mysql -h 127.0.0.1 -P 3398 -u root -p < tools/init-db.sql
 ---
 
 ## 7. 与 xzmcgeo 的一致性
+
 - 复用 meizhous 的本地环境模式（PHP 内置服务器 + router.php + MySQL 3398）
 - 复用其「主题 + core 插件 + CPT」工程结构
 - 视觉沿用 USLION 深黑/香槟金调性
 
 ---
 
-## 8. 后续待办（确认后推进）
-1. 运行环境、装 WP、录入 3–5 家样例企业与 2–3 篇新闻，跑通首页/列表/详情
-2. 接入 Simply Static，验证 `html/` 自包含
-3. 建 GitHub 仓库 + Cloudflare Pages，配置自定义域名
+## 8. 当前状态与后续待办
+
+**已完成**
+1. 本地环境打通（MySQL 3398 + PHP 8080 + WordPress 安装 + 主题/插件启用）
+2. 从 Excel 抽取 50 家企业；抓取官网图片，**29/50 有真实图**，其余走字母 monogram 兜底
+3. 导入 `ac_company`，生成英文词条（含 References 出处）与「未核验」证书标注
+4. 自研静态导出器跑通：**57 个页面 + 173 个资源**，根相对路径自包含，0 断链
+5. GitHub 仓库 `merlincao/artcoatings` 已建并推送（main）
+
+**待办（确认后推进）**
+1. Cloudflare Pages 连接该仓库，**Build output directory 设为 `html`**，绑定 `artcoatings.org`
+2. 清理仓库遗留占位内容：根目录的 `index.html`（USLION 意大利品牌页）、`assets/`、`README.md` 与本项目无关，避免误发布
+3. 补新闻内容（当前 0 篇）；按需补企业图片（21 家仍为 monogram）
 4. 按真实数据打磨设计细节（企业卡片、详情侧栏、移动端筛选）
