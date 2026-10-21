@@ -1,0 +1,48 @@
+# artcoatings.org — robots.txt
+# Independent directory of art coatings and decorative finishes.
+
+User-agent: *
+Allow: /
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+Disallow: /*?s=
+Disallow: /*?replytocom
+Disallow: /feed
+Disallow: /comments
+Crawl-delay: 1
+
+# --- AI / LLM crawlers: explicitly allowed ---
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+Sitemap: https://artcoatings.org/sitemap.xml

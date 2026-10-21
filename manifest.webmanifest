@@ -1,0 +1,15 @@
+{
+    "name": "ArtCoatings \u2014 Art Coatings Directory \u2014 Art Coatings Directory",
+    "short_name": "ArtCoatings \u2014 Art Coatings Directory",
+    "start_url": "https://artcoatings.org/",
+    "scope": "https://artcoatings.org/",
+    "display": "standalone",
+    "lang": "en",
+    "dir": "ltr",
+    "description": "Independent directory of art coatings and decorative finishes companies, based in Sicily, Italy.",
+    "categories": [
+        "business",
+        "shopping",
+        "reference"
+    ]
+}

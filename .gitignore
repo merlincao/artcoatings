@@ -1,0 +1,15 @@
+# 本仓库 = 站点产物本身：仓库根目录即站点根目录（线上没有 /html/ 这一层）。
+# 站点文件由 tools/static-export.php 生成到 html/，再用 tools/root-sync.py 摊平到这里。
+
+# ---- 本地 WordPress CMS 与工具链（只在 source 分支保存）----
+/site/
+/tools/
+/html/
+router.php
+start-env.bat
+upload-github.bat
+
+# ---- 本地产物与日志 ----
+*.log
+.DS_Store
+.workbuddy/

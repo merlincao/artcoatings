@@ -1,0 +1,17 @@
+/* TEAM */
+	Editorial desk: ArtCoatings — Art Coatings Directory
+	Contact: xzmcart@hotmail.com
+	Location: Sicily, Italy
+	Site language: English (interface also offers French, Italian, German, Portuguese, Greek)
+
+/* THANKS */
+	Listings are compiled from public sources: company websites, trade registers,
+	industry press and product documentation, plus information submitted by companies.
+
+/* SITE */
+	Standards: HTML5, CSS3
+	Content management: WordPress (local authoring only)
+	Delivery: static site on Cloudflare Pages
+	Images: WebP
+	Structured data: schema.org (Organization, CollectionPage, ItemList, LocalBusiness, NewsArticle, BreadcrumbList, FAQPage)
+	Machine-readable entry points: /llms.txt, /llms-full.txt, /sitemap.xml
