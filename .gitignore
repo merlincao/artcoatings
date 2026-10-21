@@ -1,0 +1,27 @@
+# ---- 本地密钥与凭据（绝不入库）----
+tools/.github_token
+.env
+*.local
+
+# ---- 本地 WordPress 运行环境 ----
+# WP 仅作本地 CMS，核心与上传文件不入库；但保留自研主题/插件源码
+site/*
+!site/wp-content/
+site/wp-content/*
+!site/wp-content/themes/
+site/wp-content/themes/*
+!site/wp-content/themes/artcoatings/
+!site/wp-content/plugins/
+site/wp-content/plugins/*
+!site/wp-content/plugins/artcoatings-core/
+
+# ---- 抓取的原始图片与备份（体积大，可由 JSON 重建）----
+tools/data/images/
+tools/data/images.bak/
+tools/simply-static/
+tools/simply-static.zip
+
+# ---- 日志与临时文件 ----
+*.log
+.DS_Store
+tools/_verify.php
