@@ -79,15 +79,16 @@ while ( have_posts() ) : the_post();
 					<section class="panel">
 						<h2 class="panel__title">Certifications<?php if ( ac_meta( 'ac_cert_unverified' ) ) : ?> <span class="badge-unverified">Unverified</span><?php endif; ?></h2>
 						<p class="panel__text"><?php echo nl2br( esc_html( $certs ) ); ?></p>
-						<?php if ( ac_meta( 'ac_cert_unverified' ) ) : ?><p class="cert-note">Based on publicly available sources and not independently confirmed. Contact the company to verify.</p><?php endif; ?>
+						<?php if ( ac_meta( 'ac_cert_unverified' ) ) : ?><p class="cert-note" data-i18n="cert.note">Based on publicly available sources and not independently confirmed. Contact the company to verify.</p><?php endif; ?>
 					</section>
 				<?php endif; ?>
 
 				<?php
 				$gallery = ac_meta( 'ac_gallery' );
-				if ( $gallery ) :
-					$gids = array_filter( array_map( 'trim', explode( ',', $gallery ) ), 'is_numeric' );
-					if ( $gids ) :
+				// ac_gallery 历史上两种写法都出现过：逗号分隔的字符串（导入脚本）和数组（挂图脚本）。
+				// 统一在这里归一化，避免 explode() 接到数组直接抛 TypeError 让整页 500。
+				$gids = ac_parse_id_list( $gallery );
+				if ( $gids ) :
 				?>
 					<section class="panel">
 						<h2 class="panel__title">Gallery</h2>
@@ -99,7 +100,6 @@ while ( have_posts() ) : the_post();
 					</section>
 				<?php
 					endif;
-				endif;
 				?>
 			</div>
 

@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>artcoatings.org · 设计预览</title>
+<link rel="stylesheet" href="assets/tokens.css">
+<link rel="stylesheet" href="assets/main.css">
+<style>
+  /* 预览专用：图片占位（真实站点为特色图片） */
+  .ph{display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#efe9df 0%,#dcd1bd 60%,#cbbfa6 100%);color:#8a8172;font-size:11px;letter-spacing:.18em;text-transform:uppercase}
+  .divider{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:14px 20px;text-align:center;font-size:12px;letter-spacing:.2em;color:var(--text-muted)}
+  .preview-note{position:fixed;right:16px;bottom:16px;background:var(--ink);color:#fff;font-size:12px;padding:10px 14px;border-left:3px solid var(--gold);z-index:200;opacity:.92}
+</style>
+</head>
+<body>
+
+<!-- ===================== 页头 ===================== -->
+<header class="site-header" id="siteHeader">
+  <div class="container site-header__inner">
+    <a class="brand" href="#home">
+      <span class="brand__mark">AC</span>
+      <span class="brand__text"><strong>ARTCOATINGS</strong><em>艺术涂装企业黄页</em></span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="打开菜单">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="primary-nav" id="primaryNav">
+      <ul class="nav-list">
+        <li><a href="#home">首页</a></li>
+        <li><a href="#listing">企业黄页</a></li>
+        <li><a href="#news">新闻资讯</a></li>
+        <li><a href="#company">企业详情</a></li>
+      </ul>
+      <a class="btn btn--gold nav-cta" href="#listing">入驻黄页</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===================== ① 首页 ===================== -->
+<section id="home" class="hero">
+  <div class="container hero__inner">
+    <p class="hero__eyebrow">ART COATINGS DIRECTORY</p>
+    <h1 class="hero__title">发现优质<br>艺术涂装企业</h1>
+    <p class="hero__sub">汇聚艺术漆、无机灰泥、微水泥、小羊皮等品类的企业名录与行业资讯，连接上下游，助力精准获客。</p>
+    <div class="hero__actions">
+      <a class="btn btn--gold" href="#listing">浏览企业黄页</a>
+      <a class="btn btn--ghost" href="#news">行业资讯</a>
+    </div>
+    <div class="hero__stats">
+      <div><strong>128</strong><span>入驻企业</span></div>
+      <div><strong>96</strong><span>行业资讯</span></div>
+      <div><strong>6</strong><span>覆盖品类</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container">
+    <div class="section__head"><h2 class="section__title">按品类找企业</h2><a class="section__more" href="#listing">全部企业 →</a></div>
+    <div class="pill-row">
+      <a class="pill" href="#listing">艺术漆<span class="pill__count">46</span></a>
+      <a class="pill" href="#listing">无机灰泥<span class="pill__count">32</span></a>
+      <a class="pill" href="#listing">微水泥<span class="pill__count">28</span></a>
+      <a class="pill" href="#listing">小羊皮<span class="pill__count">18</span></a>
+      <a class="pill" href="#listing">马来漆<span class="pill__count">12</span></a>
+      <a class="pill" href="#listing">金属漆<span class="pill__count">9</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section__head"><h2 class="section__title">推荐企业</h2><a class="section__more" href="#listing">查看全部 →</a></div>
+    <div class="card-grid">
+      <article class="card"><a class="card__link" href="#company">
+        <div class="card__media ph">BRAD</div>
+        <div class="card__body"><h3 class="card__title">杭州布莱德新材料有限公司</h3><p class="card__meta">浙江 · 杭州 · 艺术漆</p><p class="card__desc">意大利进口艺术涂料，无机灰泥与小羊皮系统，华东本地化施工服务。</p></div>
+      </a></article>
+      <article class="card"><a class="card__link" href="#company">
+        <div class="card__media ph">MOYUN</div>
+        <div class="card__body"><h3 class="card__title">上海墨韵艺术涂料</h3><p class="card__meta">上海 · 微水泥</p><p class="card__desc">高端微水泥整体解决方案，商业空间与住宅一体化施工。</p></div>
+      </a></article>
+      <article class="card"><a class="card__link" href="#company">
+        <div class="card__media ph">CASARO</div>
+        <div class="card__body"><h3 class="card__title">广州卡萨罗涂装</h3><p class="card__meta">广东 · 广州 · 小羊皮</p><p class="card__desc">小羊皮艺术漆华南服务商，专注别墅与样板房墙面效果。</p></div>
+      </a></article>
+      <article class="card"><a class="card__link" href="#company">
+        <div class="card__media ph">HUIDIAO</div>
+        <div class="card__body"><h3 class="card__title">成都灰调空间</h3><p class="card__meta">四川 · 成都 · 艺术漆</p><p class="card__desc">西南地区艺术漆施工团队，擅长侘寂风与工业风肌理。</p></div>
+      </a></article>
+      <article class="card"><a class="card__link" href="#company">
+        <div class="card__media ph">WOYI</div>
+        <div class="card__body"><h3 class="card__title">苏州沃艺装饰材料</h3><p class="card__meta">江苏 · 苏州 · 微水泥</p><p class="card__desc">微水泥材料供应与培训，服务长三角设计师与工长。</p></div>
+      </a></article>
+      <article class="card"><a class="card__link" href="#company">
+        <div class="card__media ph">ZHUYAN</div>
+        <div class="card__body"><h3 class="card__title">北京筑颜新材料</h3><p class="card__meta">北京 · 无机灰泥</p><p class="card__desc">无机灰泥与矿物涂料，主打环保与耐久性能。</p></div>
+      </a></article>
+    </div>
+  </div>
+</section>
+
+<section id="news" class="section section--muted">
+  <div class="container">
+    <div class="section__head"><h2 class="section__title">行业资讯</h2><a class="section__more" href="#news">更多资讯 →</a></div>
+    <div class="news-list">
+      <a class="news-item" href="#news"><time class="news-item__date">10.21</time><div class="news-item__main"><h3 class="news-item__title">2026 艺术涂料流行色趋势发布</h3><p class="news-item__desc">低饱和矿物色与暖灰调持续走强，微水泥肌理成为商业空间首选。</p></div></a>
+      <a class="news-item" href="#news"><time class="news-item__date">10.18</time><div class="news-item__main"><h3 class="news-item__title">无机灰泥施工工艺要点解析</h3><p class="news-item__desc">从基层处理到罩面养护，梳理无机灰泥施工的关键控制点。</p></div></a>
+      <a class="news-item" href="#news"><time class="news-item__date">10.12</time><div class="news-item__main"><h3 class="news-item__title">华东艺术涂装展将于下月开幕</h3><p class="news-item__desc">本届展会聚焦材料创新与施工工艺，预计超 200 家品牌参展。</p></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ② 黄页列表 ===================== -->
+<div class="divider">② 企业黄页列表（/company/）</div>
+<section id="listing" class="page-hero">
+  <div class="container">
+    <p class="page-hero__eyebrow">DIRECTORY</p>
+    <h1 class="page-hero__title">企业黄页</h1>
+    <p class="page-hero__sub">按品类与地区检索艺术涂装企业，快速找到合适的品牌、材料与服务商。</p>
+  </div>
+</section>
+<section class="section section--tight">
+  <div class="container">
+    <div class="filter-block">
+      <div class="filter-row">
+        <span class="filter-label">品类</span>
+        <div class="pill-row">
+          <a class="pill pill--active" href="#listing">全部</a>
+          <a class="pill" href="#listing">艺术漆<span class="pill__count">46</span></a>
+          <a class="pill" href="#listing">无机灰泥<span class="pill__count">32</span></a>
+          <a class="pill" href="#listing">微水泥<span class="pill__count">28</span></a>
+          <a class="pill" href="#listing">小羊皮<span class="pill__count">18</span></a>
+        </div>
+      </div>
+      <div class="filter-row">
+        <span class="filter-label">地区</span>
+        <div class="pill-row">
+          <a class="pill" href="#listing">浙江<span class="pill__count">22</span></a>
+          <a class="pill" href="#listing">上海<span class="pill__count">18</span></a>
+          <a class="pill" href="#listing">江苏<span class="pill__count">16</span></a>
+          <a class="pill" href="#listing">广东<span class="pill__count">14</span></a>
+          <a class="pill" href="#listing">四川<span class="pill__count">9</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="card-grid">
+      <article class="card"><a class="card__link" href="#company"><div class="card__media ph">BRAD</div><div class="card__body"><h3 class="card__title">杭州布莱德新材料有限公司</h3><p class="card__meta">浙江 · 杭州 · 艺术漆</p><p class="card__desc">意大利进口艺术涂料，无机灰泥与小羊皮系统。</p></div></a></article>
+      <article class="card"><a class="card__link" href="#company"><div class="card__media ph">MOYUN</div><div class="card__body"><h3 class="card__title">上海墨韵艺术涂料</h3><p class="card__meta">上海 · 微水泥</p><p class="card__desc">高端微水泥整体解决方案。</p></div></a></article>
+      <article class="card"><a class="card__link" href="#company"><div class="card__media ph">CASARO</div><div class="card__body"><h3 class="card__title">广州卡萨罗涂装</h3><p class="card__meta">广东 · 广州 · 小羊皮</p><p class="card__desc">小羊皮艺术漆华南服务商。</p></div></a></article>
+      <article class="card"><a class="card__link" href="#company"><div class="card__media ph">HUIDIAO</div><div class="card__body"><h3 class="card__title">成都灰调空间</h3><p class="card__meta">四川 · 成都 · 艺术漆</p><p class="card__desc">侘寂风与工业风肌理施工。</p></div></a></article>
+      <article class="card"><a class="card__link" href="#company"><div class="card__media ph">WOYI</div><div class="card__body"><h3 class="card__title">苏州沃艺装饰材料</h3><p class="card__meta">江苏 · 苏州 · 微水泥</p><p class="card__desc">微水泥材料供应与培训。</p></div></a></article>
+      <article class="card"><a class="card__link" href="#company"><div class="card__media ph">ZHUYAN</div><div class="card__body"><h3 class="card__title">北京筑颜新材料</h3><p class="card__meta">北京 · 无机灰泥</p><p class="card__desc">无机灰泥与矿物涂料。</p></div></a></article>
+    </div>
+    <div class="pagination"><a class="page-numbers current" href="#listing">1</a><a class="page-numbers" href="#listing">2</a><a class="page-numbers" href="#listing">3</a><a class="page-numbers" href="#listing">下一页</a></div>
+  </div>
+</section>
+
+<!-- ===================== ③ 企业详情 ===================== -->
+<div class="divider">③ 企业详情（/company/{slug}/）</div>
+<article id="company" class="company">
+  <div class="container">
+    <nav class="breadcrumb"><a href="#home">首页</a><span>/</span><a href="#listing">企业黄页</a><span>/</span><em>杭州布莱德新材料有限公司</em></nav>
+    <header class="company__head">
+      <div class="company__logo ph">LOGO</div>
+      <div class="company__intro">
+        <h1 class="company__name">杭州布莱德新材料有限公司</h1>
+        <div class="company__tags"><span class="tag">艺术漆</span><span class="tag tag--ghost">浙江 · 杭州</span></div>
+        <p class="company__summary">意大利进口艺术涂料品牌服务商，提供无机灰泥、小羊皮、微水泥等系统材料与华东本地化施工。</p>
+        <div class="company__actions">
+          <a class="btn btn--gold" href="#company">访问官网 ↗</a>
+          <a class="btn btn--ghost-dark" href="#company">0571-8888 6666</a>
+        </div>
+      </div>
+    </header>
+    <div class="company__grid">
+      <div class="company__main">
+        <section class="panel">
+          <h2 class="panel__title">企业介绍</h2>
+          <div class="prose">
+            <p>杭州布莱德新材料有限公司专注高端艺术涂装材料与施工服务，代理意大利原装进口艺术涂料，覆盖艺术漆、无机灰泥、小羊皮、微水泥等品类。</p>
+            <p>公司拥有成熟的施工与售后团队，服务范围覆盖浙江、江苏、上海等长三角地区，为别墅、样板房、商业空间提供从材料到工艺的一体化解决方案。</p>
+          </div>
+        </section>
+        <section class="panel">
+          <h2 class="panel__title">主营产品</h2>
+          <p class="panel__text">艺术漆 · 无机灰泥 · 小羊皮艺术涂料 · 微水泥 · 马来漆</p>
+        </section>
+      </div>
+      <aside class="company__side">
+        <div class="panel panel--contact">
+          <h2 class="panel__title">联系信息</h2>
+          <ul class="contact-list">
+            <li><span>联系人</span><strong>王先生</strong></li>
+            <li><span>电话</span><strong>0571-8888 6666</strong></li>
+            <li><span>地址</span><strong>浙江省杭州市余杭区</strong></li>
+            <li><span>成立年份</span><strong>2012</strong></li>
+            <li><span>官网</span><strong><a href="#company">brad-coatings.com</a></strong></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+</article>
+
+<!-- ===================== 页脚 ===================== -->
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <div class="footer-col footer-brand">
+      <span class="brand__text"><strong>ARTCOATINGS</strong><em>艺术涂装企业黄页</em></span>
+      <p>汇聚艺术涂料、无机灰泥、微水泥等优质企业与行业资讯，为上下游提供展示与对接。</p>
+    </div>
+    <div class="footer-col"><h4>快速导航</h4><ul><li><a href="#home">首页</a></li><li><a href="#listing">企业黄页</a></li><li><a href="#news">新闻资讯</a></li></ul></div>
+    <div class="footer-col"><h4>联系方式</h4><ul><li>合作邮箱：hello@artcoatings.org</li><li>工作日 9:00–18:00</li></ul></div>
+  </div>
+  <div class="footer-bottom"><div class="container"><span>© 2026 artcoatings.org · 艺术涂装企业黄页</span></div></div>
+</footer>
+
+<div class="preview-note">设计预览 · 拖动窗口宽度查看移动端</div>
+<script src="assets/main.js"></script>
+</body>
+</html>

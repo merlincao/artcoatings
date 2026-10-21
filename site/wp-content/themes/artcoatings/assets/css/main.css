@@ -112,6 +112,37 @@ button { font-family: inherit; }
 .nav-list a:hover { color: var(--gold); }
 .nav-cta { margin-top: 12px; align-self: flex-start; }
 
+/* ---------- 语言切换 ---------- */
+.lang-switch { position: relative; margin-top: 14px; align-self: flex-start; }
+.lang-switch__btn {
+  display: inline-flex; align-items: center; gap: 7px;
+  padding: 8px 12px; border-radius: var(--radius);
+  background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.14);
+  color: var(--text-invert); font: inherit; font-size: 13px; letter-spacing: .02em;
+  cursor: pointer; transition: background .18s ease, border-color .18s ease;
+}
+.lang-switch__btn:hover { background: rgba(255,255,255,.12); border-color: rgba(255,255,255,.26); }
+.lang-switch__icon, .lang-switch__caret { flex: none; opacity: .85; }
+.lang-switch__caret { transition: transform .18s ease; }
+.lang-switch.is-open .lang-switch__caret { transform: rotate(180deg); }
+
+.lang-switch__menu {
+  display: none; position: absolute; top: calc(100% + 6px); left: 0; z-index: 60;
+  min-width: 168px; margin: 0; padding: 6px; list-style: none;
+  background: var(--ink-2); border: 1px solid rgba(255,255,255,.14);
+  border-radius: var(--radius); box-shadow: 0 14px 34px rgba(0,0,0,.38);
+}
+.lang-switch.is-open .lang-switch__menu { display: block; }
+.lang-switch__menu button {
+  display: block; width: 100%; text-align: left;
+  padding: 9px 12px; border: 0; border-radius: var(--radius);
+  background: transparent; color: rgba(255,255,255,.82);
+  font: inherit; font-size: 13.5px; cursor: pointer;
+}
+.lang-switch__menu button:hover { background: rgba(255,255,255,.09); color: #fff; }
+.lang-switch__menu button.is-active { color: var(--gold); font-weight: 600; }
+.lang-switch__menu button.is-active::after { content: " ✓"; }
+
 /* ---------- Hero ---------- */
 .hero {
   background: var(--ink);
@@ -343,6 +374,8 @@ button { font-family: inherit; }
   .nav-list { flex-direction: row; gap: 28px; }
   .nav-list a { padding: 6px 0; border: 0; font-size: 14px; letter-spacing: .02em; }
   .nav-cta { margin-top: 0; }
+  .lang-switch { margin-top: 0; align-self: center; }
+  .lang-switch__menu { left: auto; right: 0; }
   .hero__title { font-size: 58px; }
   .card-grid { grid-template-columns: repeat(3, 1fr); gap: 28px; }
   .company__grid { grid-template-columns: minmax(0, 1fr) 348px; gap: 48px; }

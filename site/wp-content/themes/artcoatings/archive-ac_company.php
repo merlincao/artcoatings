@@ -12,7 +12,7 @@ $regions    = get_terms( array( 'taxonomy' => 'ac_region', 'hide_empty' => true 
 	<div class="container">
 		<p class="page-hero__eyebrow">DIRECTORY</p>
 		<h1 class="page-hero__title">Company Directory</h1>
-		<p class="page-hero__sub">Search art coatings companies by category and region — find the right brands, materials and contractors quickly.</p>
+		<p class="page-hero__sub" data-i18n="dir.sub">Search art coatings companies by category and region — find the right brands, materials and contractors quickly.</p>
 	</div>
 </section>
 

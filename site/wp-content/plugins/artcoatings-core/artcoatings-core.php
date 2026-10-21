@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: ArtCoatings Core
- * Description: artcoatings.org 业务核心：企业黄页(ac_company)、新闻(ac_news)、行业/地区/新闻分类，以及企业字段。
+ * Description: artcoatings.org business core: company directory (ac_company), news (ac_news), industry/region/news taxonomies, and company fields.
  * Version: 0.1.0
  * Author: artcoatings
  * Text Domain: artcoatings
@@ -12,21 +12,21 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * 1. 注册自定义文章类型
+ * 1. Register custom post types
  */
 function ac_register_post_types() {
 
-	// ---- 企业黄页 ----
+	// ---- Company directory ----
 	register_post_type( 'ac_company', array(
 		'labels' => array(
-			'name'          => '企业黄页',
-			'singular_name' => '企业',
-			'menu_name'     => '企业黄页',
-			'add_new'       => '新增企业',
-			'add_new_item'  => '新增企业',
-			'edit_item'     => '编辑企业',
-			'all_items'     => '全部企业',
-			'search_items'  => '搜索企业',
+			'name'          => 'Companies',
+			'singular_name' => 'Company',
+			'menu_name'     => 'Company Directory',
+			'add_new'       => 'Add Company',
+			'add_new_item'  => 'Add New Company',
+			'edit_item'     => 'Edit Company',
+			'all_items'     => 'All Companies',
+			'search_items'  => 'Search Companies',
 		),
 		'public'        => true,
 		'has_archive'   => true,
@@ -37,17 +37,17 @@ function ac_register_post_types() {
 		'show_in_rest'  => true,
 	) );
 
-	// ---- 新闻 ----
+	// ---- News ----
 	register_post_type( 'ac_news', array(
 		'labels' => array(
-			'name'          => '新闻资讯',
-			'singular_name' => '新闻',
-			'menu_name'     => '新闻资讯',
-			'add_new'       => '新增新闻',
-			'add_new_item'  => '新增新闻',
-			'edit_item'     => '编辑新闻',
-			'all_items'     => '全部新闻',
-			'search_items'  => '搜索新闻',
+			'name'          => 'News',
+			'singular_name' => 'News',
+			'menu_name'     => 'News',
+			'add_new'       => 'Add News',
+			'add_new_item'  => 'Add New Article',
+			'edit_item'     => 'Edit Article',
+			'all_items'     => 'All News',
+			'search_items'  => 'Search News',
 		),
 		'public'        => true,
 		'has_archive'   => true,
@@ -61,16 +61,16 @@ function ac_register_post_types() {
 add_action( 'init', 'ac_register_post_types' );
 
 /**
- * 2. 注册分类法
+ * 2. Register taxonomies
  */
 function ac_register_taxonomies() {
 
-	// 行业（企业）
+	// Industry (companies)
 	register_taxonomy( 'ac_industry', array( 'ac_company' ), array(
 		'labels' => array(
-			'name'          => '行业分类',
-			'singular_name' => '行业',
-			'menu_name'     => '行业分类',
+			'name'          => 'Industries',
+			'singular_name' => 'Industry',
+			'menu_name'     => 'Industries',
 		),
 		'hierarchical'      => true,
 		'public'            => true,
@@ -79,12 +79,12 @@ function ac_register_taxonomies() {
 		'show_in_rest'      => true,
 	) );
 
-	// 地区（企业）
+	// Region (companies)
 	register_taxonomy( 'ac_region', array( 'ac_company' ), array(
 		'labels' => array(
-			'name'          => '地区分类',
-			'singular_name' => '地区',
-			'menu_name'     => '地区分类',
+			'name'          => 'Regions',
+			'singular_name' => 'Region',
+			'menu_name'     => 'Regions',
 		),
 		'hierarchical'      => true,
 		'public'            => true,
@@ -93,12 +93,12 @@ function ac_register_taxonomies() {
 		'show_in_rest'      => true,
 	) );
 
-	// 新闻分类
+	// News categories
 	register_taxonomy( 'ac_news_cat', array( 'ac_news' ), array(
 		'labels' => array(
-			'name'          => '新闻分类',
-			'singular_name' => '新闻分类',
-			'menu_name'     => '新闻分类',
+			'name'          => 'News Categories',
+			'singular_name' => 'News Category',
+			'menu_name'     => 'News Categories',
 		),
 		'hierarchical'      => true,
 		'public'            => true,
@@ -110,34 +110,34 @@ function ac_register_taxonomies() {
 add_action( 'init', 'ac_register_taxonomies' );
 
 /**
- * 3. 企业字段（原生 meta，导出友好，不依赖 ACF）
+ * 3. Company fields (native meta — export friendly, no ACF dependency)
  */
 function ac_company_fields() {
 	return array(
-		'ac_website'       => array( 'label' => '官方网站', 'type' => 'url',      'ph' => 'https://' ),
-		'ac_phone'         => array( 'label' => '联系电话', 'type' => 'text',     'ph' => '0571-xxxxxxx' ),
-		'ac_contact'       => array( 'label' => '联系人',   'type' => 'text',     'ph' => '' ),
-		'ac_address'       => array( 'label' => '公司地址', 'type' => 'text',     'ph' => '省 / 市 / 详细地址' ),
-		'ac_founded'       => array( 'label' => '成立年份', 'type' => 'text',     'ph' => '2010' ),
-		'ac_main_products' => array( 'label' => '主营产品', 'type' => 'textarea', 'ph' => '艺术漆 / 无机灰泥 / 小羊皮…' ),
-		'ac_service_regions' => array( 'label' => '服务地区', 'type' => 'textarea', 'ph' => 'Italy / Europe / 具体国家与地区' ),
-		'ac_certificates'  => array( 'label' => '资质证书', 'type' => 'textarea', 'ph' => 'ISO 9001 / 环保认证等（仅填可公开核验的）' ),
-		'ac_summary'       => array( 'label' => '一句话简介', 'type' => 'textarea', 'ph' => '用于列表卡片展示的 1-2 句话' ),
+		'ac_website'       => array( 'label' => 'Official website', 'type' => 'url',      'ph' => 'https://' ),
+		'ac_phone'         => array( 'label' => 'Phone', 'type' => 'text',     'ph' => '+39 0000 000000' ),
+		'ac_contact'       => array( 'label' => 'Contact person',   'type' => 'text',     'ph' => '' ),
+		'ac_address'       => array( 'label' => 'Address', 'type' => 'text',     'ph' => 'Street / City / Country' ),
+		'ac_founded'       => array( 'label' => 'Founded', 'type' => 'text',     'ph' => '2010' ),
+		'ac_main_products' => array( 'label' => 'Main products', 'type' => 'textarea', 'ph' => 'Decorative paints / Mineral plaster / Venetian finishes…' ),
+		'ac_service_regions' => array( 'label' => 'Service regions', 'type' => 'textarea', 'ph' => 'Italy / Europe / specific countries' ),
+		'ac_certificates'  => array( 'label' => 'Certifications', 'type' => 'textarea', 'ph' => 'ISO 9001 / environmental certifications (publicly verifiable only)' ),
+		'ac_summary'       => array( 'label' => 'Short summary', 'type' => 'textarea', 'ph' => 'One or two sentences shown on listing cards' ),
 	);
 }
 
 function ac_news_fields() {
 	return array(
-		'ac_source' => array( 'label' => '来源', 'type' => 'text', 'ph' => '行业媒体 / 企业投稿' ),
+		'ac_source' => array( 'label' => 'Source', 'type' => 'text', 'ph' => 'Trade media / company submission' ),
 	);
 }
 
 /**
- * 4. 注册 meta box
+ * 4. Register meta boxes
  */
 function ac_add_meta_boxes() {
-	add_meta_box( 'ac_company_meta', '企业信息', 'ac_render_company_meta', 'ac_company', 'normal', 'high' );
-	add_meta_box( 'ac_news_meta', '新闻信息', 'ac_render_news_meta', 'ac_news', 'side', 'default' );
+	add_meta_box( 'ac_company_meta', 'Company information', 'ac_render_company_meta', 'ac_company', 'normal', 'high' );
+	add_meta_box( 'ac_news_meta', 'Article information', 'ac_render_news_meta', 'ac_news', 'side', 'default' );
 }
 add_action( 'add_meta_boxes', 'ac_add_meta_boxes' );
 
@@ -155,7 +155,7 @@ function ac_render_company_meta( $post ) {
 		echo '</td></tr>';
 	}
 	echo '</table>';
-	echo '<p class="description">封面图请使用右侧「特色图片」；企业 Logo 也可用特色图片承担。</p>';
+	echo '<p class="description">Use the "Featured image" panel for the cover photo; it also serves as the company logo.</p>';
 }
 
 function ac_render_news_meta( $post ) {
@@ -168,7 +168,7 @@ function ac_render_news_meta( $post ) {
 }
 
 /**
- * 5. 保存 meta
+ * 5. Save meta
  */
 function ac_save_meta( $post_id ) {
 	if ( ! isset( $_POST['ac_meta_nonce'] ) || ! wp_verify_nonce( $_POST['ac_meta_nonce'], 'ac_save_meta' ) ) {
@@ -192,16 +192,16 @@ function ac_save_meta( $post_id ) {
 add_action( 'save_post', 'ac_save_meta' );
 
 /**
- * 6. 后台列表列
+ * 6. Admin list columns
  */
 function ac_company_columns( $cols ) {
 	$new = array();
 	foreach ( $cols as $k => $v ) {
 		$new[ $k ] = $v;
 		if ( 'title' === $k ) {
-			$new['ac_region']  = '地区';
-			$new['ac_industry'] = '行业';
-			$new['ac_phone']   = '电话';
+			$new['ac_region']  = 'Region';
+			$new['ac_industry'] = 'Industry';
+			$new['ac_phone']   = 'Phone';
 		}
 	}
 	return $new;
@@ -214,14 +214,14 @@ function ac_company_column_content( $col, $post_id ) {
 	} elseif ( 'ac_region' === $col || 'ac_industry' === $col ) {
 		$terms = get_the_terms( $post_id, $col );
 		if ( $terms && ! is_wp_error( $terms ) ) {
-			echo esc_html( implode( '、', wp_list_pluck( $terms, 'name' ) ) );
+			echo esc_html( implode( ', ', wp_list_pluck( $terms, 'name' ) ) );
 		}
 	}
 }
 add_action( 'manage_ac_company_posts_custom_column', 'ac_company_column_content', 10, 2 );
 
 /**
- * 7. 黄页归档按更新时间倒序
+ * 7. Directory archive: newest updated first
  */
 function ac_company_archive_order( $q ) {
 	if ( ! is_admin() && $q->is_main_query() && ( $q->is_post_type_archive( 'ac_company' ) || $q->is_tax( array( 'ac_industry', 'ac_region' ) ) ) ) {

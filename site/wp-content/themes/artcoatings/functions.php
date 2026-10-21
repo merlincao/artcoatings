@@ -37,6 +37,9 @@ function ac_enqueue_assets() {
 	wp_enqueue_style( 'ac-tokens', $uri . '/assets/css/tokens.css', array(), filemtime( $dir . '/assets/css/tokens.css' ) );
 	wp_enqueue_style( 'ac-main', $uri . '/assets/css/main.css', array( 'ac-tokens' ), filemtime( $dir . '/assets/css/main.css' ) );
 	wp_enqueue_script( 'ac-main', $uri . '/assets/js/main.js', array(), filemtime( $dir . '/assets/js/main.js' ), true );
+
+	// 语言切换（客户端 i18n，静态站无后端）
+	wp_enqueue_script( 'ac-i18n', $uri . '/assets/js/i18n.js', array(), filemtime( $dir . '/assets/js/i18n.js' ), true );
 }
 add_action( 'wp_enqueue_scripts', 'ac_enqueue_assets' );
 
@@ -46,6 +49,35 @@ add_action( 'wp_enqueue_scripts', 'ac_enqueue_assets' );
 function ac_meta( $key, $post_id = null ) {
 	$post_id = $post_id ?: get_the_ID();
 	return get_post_meta( $post_id, $key, true );
+}
+
+/**
+ * 把 meta 值归一化成「正整数 ID 数组」。
+ *
+ * 同一个字段在库里可能有两种形态：
+ *   - 逗号/空格分隔的字符串（导入脚本写入）
+ *   - PHP 数组（挂图脚本早期版本写入）
+ * 调用方一律走这里，杜绝 explode() 收到数组导致的致命错误（整页 500）。
+ *
+ * @param mixed $value
+ * @return int[]
+ */
+function ac_parse_id_list( $value ) {
+	if ( empty( $value ) ) {
+		return array();
+	}
+	if ( is_array( $value ) ) {
+		$raw = $value;
+	} else {
+		$raw = preg_split( '/[,\s|]+/', (string) $value );
+	}
+	$ids = array();
+	foreach ( $raw as $v ) {
+		if ( is_numeric( $v ) ) {
+			$ids[] = (int) $v;
+		}
+	}
+	return array_values( array_unique( array_filter( $ids ) ) );
 }
 
 /**
@@ -108,12 +140,43 @@ function ac_site_location() {
  * 输出 SEO / Open Graph / Twitter Card 标签 + 规范链接
  * 放在 header 的 <head> 内调用。
  */
+/**
+ * 当前页面的规范 URL。
+ *
+ * 不要用 $_SERVER['REQUEST_URI'] 拼：中文/百分号 slug 经 esc_url() 会被剥成
+ * "region/-" 之类的残串，canonical 与 og:url 同时坏掉。这里一律走 WordPress
+ * 自己的规范 URL API，它们返回的已经是正确编码的绝对地址。
+ */
+function ac_canonical_url() {
+	if ( is_singular() ) {
+		return get_permalink();
+	}
+	if ( is_tax() || is_category() || is_tag() ) {
+		$term = get_queried_object();
+		if ( $term ) {
+			$link = get_term_link( $term );
+			if ( ! is_wp_error( $link ) ) {
+				return $link;
+			}
+		}
+	}
+	if ( is_post_type_archive() ) {
+		return get_post_type_archive_link( get_post_type() );
+	}
+	if ( is_front_page() || is_home() ) {
+		return home_url( '/' );
+	}
+	// 兜底：用 WP 解析出的请求路径（不含查询串），比 REQUEST_URI 干净
+	global $wp;
+	$req = ( isset( $wp->request ) && $wp->request !== '' ) ? '/' . $wp->request . '/' : '/';
+	return home_url( $req );
+}
+
 function ac_seo_meta_tags() {
 	$title       = wp_get_document_title();
 	$description = '';
 	$og_type     = 'website';
-	$req_uri     = isset( $_SERVER['REQUEST_URI'] ) ? sanitize_text_field( wp_unslash( $_SERVER['REQUEST_URI'] ) ) : '/';
-	$og_url      = esc_url( home_url( $req_uri ) );
+	$og_url      = esc_url( ac_canonical_url() );
 
 	if ( is_singular( 'ac_company' ) ) {
 		$og_type     = 'article';

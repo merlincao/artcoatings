@@ -12,8 +12,8 @@ $news       = new WP_Query( array( 'post_type' => 'ac_news', 'posts_per_page' =>
 <section class="hero">
 	<div class="container hero__inner">
 		<p class="hero__eyebrow">ART COATINGS DIRECTORY</p>
-		<h1 class="hero__title">Discover trusted<br>art coatings companies</h1>
-		<p class="hero__sub">A Sicily-based, independent directory of decorative coatings, mineral &amp; lime plasters, microcement and metallic systems — connecting brands, manufacturers and specifiers across Italy and Europe.</p>
+		<h1 class="hero__title" data-i18n="hero.title">Discover trusted<br>art coatings companies</h1>
+		<p class="hero__sub" data-i18n="hero.sub">A Sicily-based, independent directory of decorative coatings, mineral &amp; lime plasters, microcement and metallic systems — connecting brands, manufacturers and specifiers across Italy and Europe.</p>
 		<div class="hero__actions">
 			<a class="btn btn--gold" href="<?php echo esc_url( get_post_type_archive_link( 'ac_company' ) ); ?>">Browse the directory</a>
 			<a class="btn btn--ghost" href="<?php echo esc_url( get_post_type_archive_link( 'ac_news' ) ); ?>">Industry news</a>

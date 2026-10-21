@@ -1,0 +1,6 @@
+# 将你的 GitHub Personal Access Token (PAT) 放在这里（仅本地，已被 .gitignore 忽略）
+# 注意：GitHub 已不支持账号密码推送，必须使用 PAT（令牌）。
+# 生成地址：GitHub → Settings → Developer settings → Personal access tokens
+# 需要 repo 权限（对目标仓库有写权限）。
+# 示例：
+# ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
