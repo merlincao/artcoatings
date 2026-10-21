@@ -425,6 +425,72 @@
 		});
 	}
 
+	// 编辑政策 / 来源声明的短标签。
+	// 后期新增的统一挂在这里再合并进 DICT，避免改动上面的大字典造成冲突。
+	var EXTRA = {
+		fr: {
+			'How this entry was compiled': 'Comment cette fiche a été établie',
+			'How this directory is compiled': 'Comment cet annuaire est constitué',
+			'Source': 'Source',
+			'Source reliability': 'Fiabilité de la source',
+			'Last reviewed': 'Dernière vérification',
+			'Read the original report': 'Lire le rapport original',
+			'Editorial policy': 'Politique éditoriale',
+			'What we could not verify': "Ce que nous n'avons pas pu vérifier",
+			'Why this matters': 'Pourquoi cela compte'
+		},
+		it: {
+			'How this entry was compiled': 'Come è stata compilata questa scheda',
+			'How this directory is compiled': 'Come è composto questo elenco',
+			'Source': 'Fonte',
+			'Source reliability': 'Affidabilità della fonte',
+			'Last reviewed': 'Ultima verifica',
+			'Read the original report': 'Leggi il rapporto originale',
+			'Editorial policy': 'Politica editoriale',
+			'What we could not verify': 'Cosa non abbiamo potuto verificare',
+			'Why this matters': 'Perché è importante'
+		},
+		de: {
+			'How this entry was compiled': 'Wie dieser Eintrag erstellt wurde',
+			'How this directory is compiled': 'Wie dieses Verzeichnis entsteht',
+			'Source': 'Quelle',
+			'Source reliability': 'Zuverlässigkeit der Quelle',
+			'Last reviewed': 'Zuletzt geprüft',
+			'Read the original report': 'Originalbericht lesen',
+			'Editorial policy': 'Redaktionsrichtlinie',
+			'What we could not verify': 'Was wir nicht bestätigen konnten',
+			'Why this matters': 'Warum das wichtig ist'
+		},
+		pt: {
+			'How this entry was compiled': 'Como esta ficha foi elaborada',
+			'How this directory is compiled': 'Como este diretório é elaborado',
+			'Source': 'Fonte',
+			'Source reliability': 'Fiabilidade da fonte',
+			'Last reviewed': 'Última revisão',
+			'Read the original report': 'Ler o relatório original',
+			'Editorial policy': 'Política editorial',
+			'What we could not verify': 'O que não conseguimos verificar',
+			'Why this matters': 'Por que isto importa'
+		},
+		el: {
+			'How this entry was compiled': 'Πώς συντάχθηκε αυτή η καταχώριση',
+			'How this directory is compiled': 'Πώς συντάσσεται αυτός ο κατάλογος',
+			'Source': 'Πηγή',
+			'Source reliability': 'Αξιοπιστία πηγής',
+			'Last reviewed': 'Τελευταίος έλεγχος',
+			'Read the original report': 'Διαβάστε την αρχική αναφορά',
+			'Editorial policy': 'Συντακτική πολιτική',
+			'What we could not verify': 'Τι δεν μπορέσαμε να επιβεβαιώσουμε',
+			'Why this matters': 'Γιατί έχει σημασία'
+		}
+	};
+	Object.keys(EXTRA).forEach(function (code) {
+		DICT[code] = DICT[code] || {};
+		Object.keys(EXTRA[code]).forEach(function (k) {
+			if (!(k in DICT[code])) { DICT[code][k] = EXTRA[code][k]; }
+		});
+	});
+
 	// ---------- 启动 ----------
 	function boot() {
 		initSwitcher();

@@ -74,4 +74,6 @@ $regions    = get_terms( array( 'taxonomy' => 'ac_region', 'hide_empty' => true 
 	</div>
 </section>
 
+<?php ac_render_directory_policy(); ?>
+
 <?php get_footer(); ?>

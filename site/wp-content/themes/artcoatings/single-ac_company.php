@@ -101,6 +101,27 @@ while ( have_posts() ) : the_post();
 				<?php
 					endif;
 				?>
+
+				<section class="panel panel--note">
+					<h2 class="panel__title" data-i18n="How this entry was compiled">How this entry was compiled</h2>
+					<dl class="note-list">
+						<div class="note-list__row">
+							<dt data-i18n="Source">Source</dt>
+							<dd><?php echo $website ? 'Company website plus publicly available trade and press sources' : 'Publicly available trade and press sources'; ?></dd>
+						</div>
+						<div class="note-list__row">
+							<dt>Verification</dt>
+							<dd><?php echo ac_meta( 'ac_cert_unverified' ) ? 'Certifications reproduced from public sources, not independently confirmed' : 'Company-declared; not independently audited by ArtCoatings'; ?></dd>
+						</div>
+						<div class="note-list__row">
+							<dt data-i18n="Last reviewed">Last reviewed</dt>
+							<dd><time datetime="<?php echo esc_attr( get_the_modified_date( 'c' ) ); ?>"><?php echo esc_html( get_the_modified_date( 'Y-m-d' ) ); ?></time></dd>
+						</div>
+					</dl>
+					<p class="note-text note-text__muted">
+						ArtCoatings is an independent directory. It does not sell the products listed, takes no commission on enquiries, and does not endorse or rank any company. Listings are published for reference; confirm specifications, prices and certificates directly with the company before specifying or buying.
+					</p>
+				</section>
 			</div>
 
 			<aside class="company__side">

@@ -128,7 +128,9 @@ function ac_company_fields() {
 
 function ac_news_fields() {
 	return array(
-		'ac_source' => array( 'label' => 'Source', 'type' => 'text', 'ph' => 'Trade media / company submission' ),
+		'ac_source'      => array( 'label' => 'Source (outlet)', 'type' => 'text', 'ph' => 'Trade media / company newsroom' ),
+		'ac_source_url'  => array( 'label' => 'Original article URL', 'type' => 'url', 'ph' => 'https://' ),
+		'ac_confidence'  => array( 'label' => 'Source reliability', 'type' => 'text', 'ph' => 'High / Medium-high / Medium' ),
 	);
 }
 

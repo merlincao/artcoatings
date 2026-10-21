@@ -25,6 +25,14 @@
 				<li>Based in Sicily, Italy</li>
 			</ul>
 		</div>
+		<div class="footer-col">
+			<h4>Editorial</h4>
+			<ul>
+				<li><a href="<?php echo esc_url( home_url( '/editorial-policy/' ) ); ?>">Editorial policy</a></li>
+				<li><a href="<?php echo esc_url( home_url( '/sitemap.xml' ) ); ?>">Sitemap</a></li>
+				<li><a href="<?php echo esc_url( home_url( '/llms.txt' ) ); ?>">llms.txt</a></li>
+			</ul>
+		</div>
 	</div>
 	<div class="footer-bottom">
 		<div class="container">

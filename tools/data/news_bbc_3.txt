@@ -1,0 +1,186 @@
+### 29
+TITLE: European standard on rendering and plastering listed with 2026 date
+CAT: Standards & Regulation
+SRC: Perinorm / DIN
+URL: https://www.perinorm.com/standard/din-en-13914-2-2026-06-01
+CONF: Medium
+IMG: standards
+STAND: DIN EN 13914-2, the standard covering design, preparation and application of external rendering and internal plastering, appears with a June 2026 date.
+BODY:
+<p>Perinorm lists DIN EN 13914-2 — the European standard on the design, preparation and application of external rendering and internal plastering — with a date of June 2026.</p>
+<p>Standards of this kind are the reference that specifications are written against. EN 13914 deals with the decisions that determine whether a render or plaster survives: substrate assessment, mix design, number and thickness of coats, detailing at movement joints, and the conditions under which application should and should not proceed.</p>
+<p>ArtCoatings has not seen the text of the edition listed and cannot confirm whether it is a full revision or an administrative reissue. Standard bodies publish drafts, confirmations and revisions under the same number, and a listing date alone does not distinguish between them.</p>
+<h2>Why this matters</h2>
+<p>Decorative finishes fail at the substrate far more often than in the finish coat. When a standard changes its guidance on preparation, every applicator specifying against it has to revisit what they write — and every manufacturer has to check that their system's declared performance still holds.</p>
+<h2>What remains unconfirmed</h2>
+<ul><li>Whether the listing is a revision, a confirmation or a draft.</li><li>What has changed from the previous edition.</li><li>The date the new edition becomes the reference for specifications.</li></ul>
+
+### 30
+TITLE: EU Ecolabel criteria for paints and varnishes revised to 2032
+CAT: Standards & Regulation
+SRC: European Commission (DG Environment)
+URL: https://environment.ec.europa.eu/
+CONF: High
+IMG: standards
+STAND: The European Commission has revised the EU Ecolabel criteria for paints and varnishes, with the new criteria set to run until 2032.
+BODY:
+<p>The European Commission's environment directorate has published revised EU Ecolabel criteria for paints and varnishes, with the criteria stated to run until 2032.</p>
+<p>The EU Ecolabel is a voluntary scheme, but it functions as a benchmark far beyond the products that carry it. Its limits on volatile organic compounds, on restricted substances and on the durability a coating must demonstrate before it qualifies, are routinely adopted as procurement requirements by public bodies and by large commercial clients.</p>
+<p>ArtCoatings has not seen the full criteria text. The practical questions — which product categories qualify, what the VOC thresholds are, and how durability must be evidenced — cannot be answered from the announcement alone.</p>
+<h2>Why this matters</h2>
+<p>A criteria period running to 2032 gives manufacturers a fixed target to formulate against, which is what makes investment in reformulation viable. It also means decorative finishes that cannot meet the thresholds will be excluded from a growing set of tenders.</p>
+<h2>What remains unconfirmed</h2>
+<ul><li>The thresholds set for indoor and outdoor products.</li><li>Whether mineral and lime finishes have their own category.</li><li>What testing evidence is required to demonstrate durability.</li></ul>
+
+### 31
+TITLE: EU-backed project develops bio-based functional coatings
+CAT: Research & Development
+SRC: EU CORDIS (H2020)
+URL: https://cordis.europa.eu/
+CONF: High
+IMG: rnd
+STAND: PERFECOAT, an EU-funded research project, is developing high-performance bio-based coatings for wood and decorative applications.
+BODY:
+<p>PERFECOAT, a project funded under the EU's Horizon 2020 research programme, is developing high-performance bio-based functional coatings for wood and decorative applications, according to the Commission's CORDIS project record.</p>
+<p>Bio-based coatings replace part of the fossil-derived binder with material derived from biomass. The research question is not whether a bio-based binder can be made — it can — but whether it performs: hardness, water resistance, UV stability and shelf life are where alternatives to established acrylics have historically fallen short.</p>
+<p>Project records describe objectives and consortiums, not results. ArtCoatings has not seen published performance data from the project.</p>
+<h2>Why this matters</h2>
+<p>Decorative coatings carry a large share of their carbon footprint in the binder. If bio-based formulations reach commercial performance, the change reaches specifiers as a new line in a technical data sheet — and eventually as a requirement in public procurement.</p>
+<h2>What remains unconfirmed</h2>
+<ul><li>Whether any formulation has reached commercial readiness.</li><li>Measured performance against conventional binders.</li><li>The intended route to market and cost position.</li></ul>
+
+### 32
+TITLE: AkzoNobel and Axalta announce $25bn merger
+CAT: Mergers & Acquisitions
+SRC: AkzoNobel (Newsroom)
+URL: https://www.akzonobel.com/
+CONF: Medium-high
+IMG: ma
+STAND: The two coatings groups say a merger would deliver about $600m of synergies, in what would be the largest consolidation the sector has seen in years.
+BODY:
+<p>AkzoNobel and Axalta have announced a merger the companies value at $25bn, and have put the expected synergies at about $600m, according to AkzoNobel's newsroom.</p>
+<p>A synergy figure of that kind is a forecast made by the parties to the deal, and it is the number that history treats least kindly — integration costs are usually underestimated and overlapping distribution is usually harder to unwind than modelled.</p>
+<p>Both companies are coatings specialists, with AkzoNobel stronger in decorative paints and Axalta stronger in refinish and industrial coatings. That complementarity is the stated logic, and it also limits the regulatory overlap that might otherwise block the merger.</p>
+<h2>Why this matters</h2>
+<p>A merger at this scale reorders the supplier list for everyone downstream. Distributors holding two agencies find themselves holding one; contractors specifying two brands find the colour systems converging; and the combined group gains pricing power in raw material purchasing that independents cannot match.</p>
+<h2>What remains unconfirmed</h2>
+<ul><li>Whether the merger has cleared regulatory review.</li><li>How the synergy estimate was built and over what period.</li><li>Which brands and product lines will be retained.</li></ul>
+
+### 33
+TITLE: Sherwin-Williams completes acquisition of BASF's Suvinil in Brazil
+CAT: Mergers & Acquisitions
+SRC: Sherwin-Williams (Newsroom)
+URL: https://www.sherwin.com/news/
+CONF: Medium-high
+IMG: ma
+STAND: The US group has closed its $1.15bn purchase of the Brazilian decorative paints brand, adding a leading position in South America's largest coatings market.
+BODY:
+<p>Sherwin-Williams says it has completed the acquisition of BASF's Suvinil decorative paints business in Brazil for $1.15bn, according to the company's newsroom.</p>
+<p>Unlike a reported agreement, a completed transaction is a fact the company asserts directly, which is why this is treated as reliable on the central point. What remains company-supplied rather than independently verified is everything about what happens next: integration timetable, brand continuity and whether formulations change.</p>
+<p>Suvinil is a household name in Brazilian decorative paint. Brands of that kind are the asset — the plant can be built, the name cannot.</p>
+<h2>Why this matters</h2>
+<p>Brazil is one of the few large decorative coatings markets with meaningful volume growth. Adding an established brand there gives the buyer exposure to that growth without spending years building recognition.</p>
+<h2>What remains unconfirmed</h2>
+<ul><li>Whether the Suvinil brand and formulations will continue unchanged.</li><li>The integration timetable.</li><li>Whether any divestment was required to close.</li></ul>
+
+### 34
+TITLE: PPG names "Secret Safari" its 2026 global colour trend
+CAT: Colour & Design Trends
+SRC: PPG Industries (Newsroom)
+URL: https://www.ppg.com/
+CONF: Medium-high
+IMG: colour
+STAND: The US coatings group's 2026 trend programme is built around a warm neutral called Secret Safari, framed as "Parallel Perspectives".
+BODY:
+<p>PPG has named Secret Safari as its global colour trend for 2026, presenting the programme under the theme "Parallel Perspectives", according to the company's newsroom.</p>
+<p>PPG's annual trend work originates in the automotive sector, where colour cycles are set years in advance, and is then extended into architectural and industrial markets. That direction of travel is worth noting: a colour chosen for a car programme appears on walls several seasons later.</p>
+<p>The theme name is a marketing construct. The signal is the colour itself — a warm, earth-derived neutral, consistent with what other manufacturers have put forward for the same year.</p>
+<h2>Why this matters</h2>
+<p>Automotive colour programmes are locked in earlier than architectural ones, which makes them a leading indicator. Specifiers who want to know where interior palettes will sit in two years can read the automotive announcements now.</p>
+<h2>What remains unconfirmed</h2>
+<ul><li>Whether the architectural palette matches the automotive colour exactly.</li><li>Which finishes and sheens the colour will be offered in.</li><li>Whether the same colour leads in Europe and in Asia.</li></ul>
+
+### 35
+TITLE: PPG presents low-temperature cure coating technology in Asia
+CAT: Product Launches
+SRC: PPG Industries (Newsroom)
+URL: https://www.ppg.com/
+CONF: Medium
+IMG: product
+STAND: The group has shown a coating that cures at lower temperatures — a claim whose value depends entirely on what the energy saving actually is.
+BODY:
+<p>PPG has presented a low-temperature cure coating technology at SURCAR Asia 2026, according to the company's newsroom.</p>
+<p>Low-temperature cure matters because heat is cost. A coating that crosslinks properly at a lower oven temperature saves energy per part, allows heat-sensitive substrates to be coated, and shortens cycle time. All three claims are testable, and none of them has been verified here: the announcement as seen by ArtCoatings does not state the temperature reduction, the substrates covered, or the durability achieved.</p>
+<p>SURCAR is an automotive finishing event, so the technology is presented for automotive applications rather than for architectural decorative work.</p>
+<h2>Why this matters</h2>
+<p>Cure technology developed for automotive lines eventually migrates. The same chemistry constraint — curing properly without excessive heat — applies to factory-applied finishes on joinery and panels, which are a growing part of the decorative supply chain.</p>
+<h2>What remains unconfirmed</h2>
+<ul><li>The temperature reduction achieved and at what cycle time.</li><li>Which substrates the coating has been tested on.</li><li>Whether durability matches the conventional cure it replaces.</li></ul>
+
+### 36
+TITLE: Jotun names "Soulful Spaces" its 2026 global colour trend
+CAT: Colour & Design Trends
+SRC: Jotun (Newsroom)
+URL: https://www.jotun.com/
+CONF: Medium-high
+IMG: colour
+STAND: The Norwegian group's 2026 palette centres on Soulful Spaces, with Lady Nordic Breeze named among the lead colours.
+BODY:
+<p>Jotun has named Soulful Spaces as its global colour trend for 2026, with Lady Nordic Breeze identified among the lead colours, according to the company's newsroom.</p>
+<p>Jotun is one of the few manufacturers whose trend programme is genuinely global in reach, with significant market share in the Gulf, in South-East Asia and in the Nordics. A palette released with that coverage is more than a marketing exercise: it defines what is available on shelves across several very different markets.</p>
+<p>A Nordic-led palette typically means light, desaturated tones chosen for low winter sun. Applied in a Gulf market with intense direct light, the same colours read very differently — which is why manufacturers with that geographic spread publish regional variations.</p>
+<h2>Why this matters</h2>
+<p>For contractors working across regions, the practical question is whether a named trend colour is available in the same formulation everywhere. VOC limits, titanium dioxide supply and local taste all affect what actually reaches the shelf.</p>
+<h2>What remains unconfirmed</h2>
+<ul><li>Whether the palette is identical across all Jotun markets.</li><li>Which finishes Lady Nordic Breeze is offered in.</li><li>Whether the trend is backed by sales data.</li></ul>
+
+### 37
+TITLE: Asian Paints reports decorative volume growth in Q3 FY26
+CAT: Financial Results
+SRC: Asian Paints (IR)
+URL: https://www.asianpaints.com/investor-relations.html
+CONF: Medium
+IMG: results
+STAND: The Indian group's investor relations material reports decorative volume growth of 7.9 per cent and a 200 basis point improvement in gross margin.
+BODY:
+<p>Asian Paints' investor relations material reports decorative volume growth of 7.9 per cent in the third quarter of FY26, with gross margin said to have improved by 200 basis points.</p>
+<p>These are figures the company reports about itself. They are more reliable than a forecast, because they describe what has happened, but they are not audited in the form in which they are usually first released. ArtCoatings has not seen the underlying results.</p>
+<p>Volume growth and margin improvement together is the combination investors look for: it means the company sold more paint and made more on each litre, rather than buying share with price.</p>
+<h2>Why this matters</h2>
+<p>India is the second large growth market for decorative coatings after China, and Asian Paints is its benchmark company. Its volume figures are read as an indicator of the whole region's construction and repainting activity.</p>
+<h2>What remains unconfirmed</h2>
+<ul><li>Whether the figures are audited or provisional.</li><li>The volume/mix/price split behind the margin improvement.</li><li>Whether the trend continued in the following quarter.</li></ul>
+
+### 38
+TITLE: Kansai Paint introduces a lime-plaster interior wall paint
+CAT: Product Launches
+SRC: Kansai Paint
+URL: https://www.kansainpaint.com/global/en/products/decorative
+CONF: Medium
+IMG: product
+STAND: ALES SHIQUY brings a lime-plaster effect into a mainstream paint range — the direction the decorative market has been moving for several years.
+BODY:
+<p>Kansai Paint has introduced ALES SHIQUY, described as a lime-plaster interior wall paint, according to the company's decorative products pages.</p>
+<p>The product sits in a growing category: paints formulated to imitate the look of applied lime plaster. The commercial logic is clear — a painter can apply it with a roller or trowel in a fraction of the time a plasterer needs, at a fraction of the cost.</p>
+<p>What an imitation cannot reproduce is depth. A lime finish is burnished and slightly translucent, so light enters the surface and returns; a paint imitating it reflects from the top. On a photograph the two can look alike; in a room they do not.</p>
+<h2>Why this matters</h2>
+<p>Every imitation product expands the market's vocabulary and compresses its price. Specialist applicators compete by selling the difference — which means being able to explain, in plain terms, why a burnished lime wall is not the same thing as a lime-effect paint.</p>
+<h2>What remains unconfirmed</h2>
+<ul><li>Whether the product is lime-based or an acrylic imitation of lime.</li><li>The vapour permeability and repairability of the finish.</li><li>Which markets it is being launched in.</li></ul>
+
+### 39
+TITLE: Nippon Paint expands anti-viral and heat-shielding coatings in Asia
+CAT: Product Launches
+SRC: Nippon Paint (Newsroom)
+URL: https://www.nipponpaint.com.my/
+CONF: Medium
+IMG: product
+STAND: Functional coatings are being extended across the group's Asian markets — a category where the marketing has run well ahead of the evidence.
+BODY:
+<p>Nippon Paint has expanded its range of anti-viral and heat-shielding coatings across Asian markets, according to the company's newsroom.</p>
+<p>Functional coatings are the most contested category in the industry. Anti-viral claims are usually tested against a specific virus under laboratory conditions, over a defined contact time, on a defined surface — none of which maps cleanly onto a wall in a school or an office. Heat-shielding claims depend on the reflectance of the specific colour, which means a dark version of the same product will not perform like a white one.</p>
+<p>ArtCoatings has not seen the test reports behind these products and treats the claims as manufacturer assertions.</p>
+<h2>Why this matters</h2>
+<p>Specifiers are increasingly asked for coatings with added function. The defensible approach is to ask for the test standard, the organism or property tested, and the conditions — before the claim enters a specification document.</p>
+<h2>What remains unconfirmed</h2>
+<ul><li>Which standards the anti-viral claims were tested against.</li><li>Whether heat-shielding performance is measured for all colours in the range.</li><li>How long the claimed performance lasts in service.</li></ul>

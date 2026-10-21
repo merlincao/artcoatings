@@ -349,7 +349,7 @@ button { font-family: inherit; }
   .card-grid { grid-template-columns: repeat(2, 1fr); }
   .filter-row { flex-direction: row; align-items: flex-start; }
   .filter-label { flex: 0 0 52px; padding-top: 10px; }
-  .site-footer__inner { grid-template-columns: 1.5fr 1fr 1fr; }
+  .site-footer__inner { grid-template-columns: 1.5fr 1fr 1fr 1fr; }
 }
 
 @media (min-width: 768px) {
@@ -386,6 +386,67 @@ button { font-family: inherit; }
 
 @media (min-width: 1200px) {
   .hero__title { font-size: 62px; }
+}
+
+/* ============================================================
+   编辑政策 / 来源声明（第三方平台视角：来源、核验状态、免责）
+   ============================================================ */
+.panel--note {
+  background: var(--bg-muted);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+}
+.note-list { margin: 0; }
+.note-list__row {
+  display: grid;
+  grid-template-columns: 148px minmax(0, 1fr);
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px dashed var(--line);
+}
+.note-list__row:last-child { border-bottom: 0; }
+.note-list dt {
+  font-size: 11.5px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  padding-top: 2px;
+}
+.note-list dd { margin: 0; font-size: 14px; line-height: 1.65; color: var(--text); }
+.note-text { margin: 14px 0 0; font-size: 13px; line-height: 1.7; }
+.note-text__muted { color: var(--text-muted); }
+.note-link { color: var(--gold-strong); text-decoration: underline; text-underline-offset: 3px; }
+
+.policy {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 36px;
+}
+.policy__title { font-family: var(--font-display); font-size: 22px; margin: 0 0 14px; }
+.policy__text { font-size: 14.5px; line-height: 1.75; color: var(--text); margin: 0 0 16px; }
+.policy__list { margin: 0; padding-left: 20px; }
+.policy__list li { font-size: 14px; line-height: 1.75; margin-bottom: 8px; }
+.policy__list strong { color: var(--ink); }
+
+.faq { margin: 0; }
+.faq dt {
+  font-weight: 600;
+  font-size: 14.5px;
+  margin-top: 18px;
+  line-height: 1.6;
+}
+.faq dt:first-child { margin-top: 0; }
+.faq dd { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: var(--text-muted); }
+
+.news-item__byline {
+  margin: 8px 0 0;
+  font-size: 11.5px;
+  letter-spacing: .04em;
+  color: var(--text-muted);
+}
+
+@media (min-width: 900px) {
+  .policy { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 48px; }
 }
 
 /* 减少动效偏好 */

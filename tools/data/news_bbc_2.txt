@@ -1,0 +1,254 @@
+### 14
+TITLE: Drywall and building plaster market report published for 2026
+CAT: Market Research
+SRC: PW Consulting
+URL: https://www.pwconsulting.com/report/worldwide-drywall-building-plaster-market-2026/
+CONF: Medium
+IMG: market
+STAND: A new worldwide report covers drywall and building plaster — the substrate trades whose finishes sit above them in the supply chain.
+BODY:
+<p>PW Consulting has published a 2026 report on the worldwide drywall and building plaster market.</p>
+<p>This segment matters to decorative finishes because it sets the surface. Joint compounds, skim coats and base plasters determine how flat, how absorbent and how stable a wall is — and therefore whether a burnished lime finish or a metallic glaze will perform as its maker claims.</p>
+<p>ArtCoatings has not seen the underlying data. Reports of this kind are sold commercially, and their definitions of "building plaster" vary enough that figures from different publishers should not be placed side by side without checking what each counts.</p>
+<h2>Why this matters</h2>
+<p>Substrate and finish are sold by different trades but specified together. A change in the base-coat market — a shift to board, a change in skim practice — changes what applicators can achieve on top of it.</p>
+<h2>What remains unconfirmed</h2>
+<ul><li>Whether decorative finishing plasters are included in the segment.</li><li>The geographic split and base year.</li><li>How the figures were validated.</li></ul>
+
+### 15
+TITLE: Acrylic-based faux finish coatings covered in 2026 report
+CAT: Market Research
+SRC: PW Consulting
+URL: https://www.pwconsulting.com/report/worldwide-acrylic-based-faux-finish-coating-market-2026/
+CONF: Medium
+IMG: market
+STAND: A report on acrylic-based faux finish coatings examines the water-based products that imitating marble, wood and aged plaster made cheaper to produce.
+BODY:
+<p>PW Consulting has published a 2026 report on the worldwide market for acrylic-based faux finish coatings — water-based products formulated to imitate marble, wood grain, aged plaster and other materials.</p>
+<p>Acrylic-based systems changed this part of the market by removing the skill barrier. A glaze that can be worked at room temperature, cleaned with water and re-coated the same day allows a painter to produce a finish that previously required a plasterer. The trade-off is depth: an acrylic glaze sits on the surface, where a lime finish is the surface.</p>
+<p>ArtCoatings has not seen the methodology and does not report the figures.</p>
+<h2>Why this matters</h2>
+<p>Anyone comparing a decorative system should ask whether it is acrylic or mineral. The answer determines vapour permeability, repairability and how the finish ages — three things that matter more to a building owner than the look on day one.</p>
+<h2>What remains unconfirmed</h2>
+<ul><li>Whether mineral faux finishes are counted in the same segment.</li><li>The share of professional versus consumer sales.</li><li>How growth was calculated.</li></ul>
+
+### 16
+TITLE: Faux finish plaster investment landscape report covers 2026–2033
+CAT: Market Research
+SRC: Stats N Data
+URL: https://www.statsndata.com/report/global-faux-finish-plaster-market-investment-landscape-2026-2033/
+CONF: Medium
+IMG: market
+STAND: A report framing faux finish plaster as an investment theme rather than a product category — a signal about who is buying into the segment.
+BODY:
+<p>Stats N Data has published a report on the global faux finish plaster market, framed around investment landscape and covering 2026 to 2033.</p>
+<p>The framing is worth noting. An "investment landscape" treatment asks who might put money into the segment, rather than how much material is sold — which usually means the publisher sees consolidation, entry or capacity expansion as the story.</p>
+<p>ArtCoatings has not seen the report's figures or method. Reports sold in this way are directional; their value to a reader outside the investment world is in describing which forces the publisher thinks matter, not in the size of the number.</p>
+<h2>Why this matters</h2>
+<p>When a segment starts being described in investment terms, it usually means ownership is changing — and changes of ownership at a manufacturer are what eventually reach a specifier as discontinued colours or changed technical support.</p>
+<h2>What remains unconfirmed</h2>
+<ul><li>Whether the investment framing is backed by transaction data.</li><li>Which companies are treated as incumbents.</li><li>How the 2033 horizon was modelled.</li></ul>
+
+### 17
+TITLE: Texture paint market report sets out planning assumptions to 2033
+CAT: Market Research
+SRC: Stats N Data
+URL: https://www.statsndata.com/report/global-texture-paint-market-strategic-planning-insights-2026-2033/
+CONF: Medium
+IMG: market
+STAND: A strategic planning report on texture paints sets out the assumptions manufacturers are said to be planning against through 2033.
+BODY:
+<p>Stats N Data has published strategic planning insights for the global texture paint market, covering 2026 to 2033.</p>
+<p>Texture paints are the coatings sold for their physical surface — sand-textured, stone-effect and relief finishes — as distinct from smooth paints chosen for colour. The segment sits between mainstream architectural paint and the applied decorative finishes covered elsewhere on this site.</p>
+<p>ArtCoatings has not verified the projections. Long-horizon forecasts of this kind are highly sensitive to their starting assumptions about construction activity, and a small change in the housing assumption compounds over seven years.</p>
+<h2>Why this matters</h2>
+<p>Planning reports tell a reader what manufacturers expect, which is often more useful than what they sold. Expectations drive capacity, and capacity drives availability and price in the following season.</p>
+<h2>What remains unconfirmed</h2>
+<ul><li>The construction and housing assumptions behind the forecast.</li><li>Whether decorative plaster systems are counted as texture paint.</li><li>The basis for the 2033 endpoint.</li></ul>
+
+### 18
+TITLE: Decorative coatings report weighs growth drivers against constraints
+CAT: Market Research
+SRC: Stats N Data
+URL: https://www.statsndata.com/report/global-decorative-coatings-market-growth-drivers-and-challenges-2026-2033/
+CONF: Medium
+IMG: market
+STAND: A report on the global decorative coatings market pairs its growth drivers with the constraints that could slow them — the more useful half of any forecast.
+BODY:
+<p>Stats N Data has published a report on the global decorative coatings market for 2026–2033, structured around growth drivers and the challenges set against them.</p>
+<p>Reports that print the constraints alongside the drivers are easier to use than those that only print the upside. In decorative coatings the recurring constraints are raw material cost, regulation on volatile organic compounds, and the skill available to apply anything more demanding than a roller finish.</p>
+<p>ArtCoatings has not seen the underlying data and does not reproduce the figures.</p>
+<h2>Why this matters</h2>
+<p>Skill scarcity is the constraint this industry talks about least and feels most. Products that require a trained applicator can only grow at the rate applicators can be trained — which is why several manufacturers now run their own training programmes.</p>
+<h2>What remains unconfirmed</h2>
+<ul><li>Which constraints the report ranks highest.</li><li>Whether applicator capacity is treated as a constraint at all.</li><li>How regulation was modelled across regions.</li></ul>
+
+### 19
+TITLE: Interior wall texture paint report focuses on technological change
+CAT: Market Research
+SRC: Stats N Data
+URL: https://www.statsndata.com/report/global-interior-wall-texture-paint-market-technological-advancements-2026-2033/
+CONF: Medium
+IMG: market
+STAND: A report on interior wall texture paints frames the segment around technological change, from formulation to application tooling.
+BODY:
+<p>Stats N Data has published a report on the global interior wall texture paint market, framed around technological advancements and covering 2026 to 2033.</p>
+<p>"Technological advancement" in this segment usually means three things: binders that hold a texture without sagging, additives that extend working time, and tools — from combs to spray systems — that let a less experienced applicator produce a repeatable result.</p>
+<p>ArtCoatings has not verified the claims. Technology-focused reports tend to describe what suppliers say about their own products, and independent testing of texture performance is rare.</p>
+<h2>Why this matters</h2>
+<p>Repeatability is what turns a craft finish into a product. Once a textured look can be reproduced reliably by a general painter, it moves from a specialist's premium service into mainstream specification — and the price follows.</p>
+<h2>What remains unconfirmed</h2>
+<ul><li>Whether the technologies described are in commercial use or in development.</li><li>Which performance claims were independently tested.</li><li>The geographic scope of the assessment.</li></ul>
+
+### 20
+TITLE: Europe architectural coatings report examines market share
+CAT: Market Research
+SRC: Market Report Analytics
+URL: https://www.marketreportanalytics.com/reports/europe-architectural-coatings-387215
+CONF: Medium
+IMG: market
+STAND: A Europe-focused report looks at share and structure in architectural coatings — the market in which most of this directory's companies operate.
+BODY:
+<p>Market Report Analytics has published a Europe-focused analysis of the architectural coatings market, covering market share, industry trends and statistics.</p>
+<p>Europe is the relevant frame for most companies listed in this directory. Architectural coatings here are shaped by two forces that do not apply elsewhere to the same degree: the EU's emissions limits on volatile organic compounds, and a renovation stock that is old, listed in places, and vapour-open by construction.</p>
+<p>ArtCoatings has not seen the share data. Manufacturer-level shares in coatings are estimates in most published research, because the large groups do not disclose volume by country.</p>
+<h2>Why this matters</h2>
+<p>Share analysis decides who is described as a leader. If a report defines the market narrowly — excluding mineral and lime systems, for example — specialist Italian and Spanish manufacturers disappear from the ranking despite strong positions in their own categories.</p>
+<h2>What remains unconfirmed</h2>
+<ul><li>Whether mineral and lime coatings are included in the definition.</li><li>How share was estimated without country-level disclosure.</li><li>The reference year.</li></ul>
+
+### 21
+TITLE: Architectural coatings market report projects to 2034
+CAT: Market Research
+SRC: Fortune Business Insights
+URL: https://www.fortunebusinessinsights.com/architectural-coatings-market-102146
+CONF: Medium
+IMG: market
+STAND: A long-range report takes the architectural coatings market out to 2034, with a ten-year view that rests heavily on its starting assumptions.
+BODY:
+<p>Fortune Business Insights has published an architectural coatings market report projecting to 2034.</p>
+<p>Ten-year coatings forecasts should be read with care. The direction — continued demand for decorative coatings, continued pressure on emissions, continued consolidation — is well supported. The specific numbers are not, because they compound assumptions about construction starts, repainting cycles and raw material costs across a decade.</p>
+<p>ArtCoatings has not seen the methodology and does not reproduce the figures.</p>
+<h2>Why this matters</h2>
+<p>Long-range forecasts are used to justify capital spending. When a manufacturer builds a plant on a 2034 projection, the capacity arrives whether or not the projection does — which is how overcapacity develops in mature markets.</p>
+<h2>What remains unconfirmed</h2>
+<ul><li>The base year and currency basis.</li><li>Whether decorative and protective coatings are separated.</li><li>How repainting cycles were modelled.</li></ul>
+
+### 22
+TITLE: High-end interior paint market report published for 2026
+CAT: Market Research
+SRC: PW Consulting
+URL: https://www.pwconsulting.com/report/worldwide-high-end-interior-paint-market-2026/
+CONF: Medium
+IMG: market
+STAND: A report on the high-end interior paint segment examines the premium end of the market, where decorative finishes increasingly compete.
+BODY:
+<p>PW Consulting has published a 2026 report on the global high-end interior paint market.</p>
+<p>The premium segment is where mainstream paint and decorative finishes meet. A customer specifying a £60 tin of designer paint and a customer specifying a burnished lime finish are often solving the same problem — making a room look considered — and the two choices compete directly for the same budget.</p>
+<p>ArtCoatings has not seen the report's definition of "high-end", which is the detail that determines whether the figures mean anything. Price-per-litre thresholds differ between markets and are rarely stated.</p>
+<h2>Why this matters</h2>
+<p>For the decorative finishes trade, the premium paint segment is the benchmark. Applicators justify a higher price for a mineral finish by comparing it with what a premium paint costs — including the painter's time.</p>
+<h2>What remains unconfirmed</h2>
+<ul><li>How "high-end" was defined and priced.</li><li>Whether decorative plaster systems are counted as competitors.</li><li>The regional split of the data.</li></ul>
+
+### 23
+TITLE: Waterless painted plaster market report covers 2026–2032
+CAT: Market Research
+SRC: Market Research Reports
+URL: https://www.marketresearchreports.biz/reports/waterless-painted-plaster-market
+CONF: Medium
+IMG: market
+STAND: A report on waterless painted plaster examines products supplied ready-mixed rather than mixed on site.
+BODY:
+<p>Market Research Reports has published a report on the global waterless painted plaster market, covering 2026 to 2032.</p>
+<p>Waterless products — supplied ready to use rather than mixed with water on site — remove a variable that has always made plaster work unpredictable: how much water the applicator added, and how well it was mixed. Consistency is the selling point, and shelf life and transport weight are the costs.</p>
+<p>ArtCoatings has not seen the figures. Reports on narrow segments like this one often define the category around a handful of suppliers, which makes the market look tidier than it is.</p>
+<h2>Why this matters</h2>
+<p>Removing on-site mixing errors is what allows a decorative finish to be sold through general distribution instead of through specialists. It is the same mechanism by which acrylic glazes expanded the faux finish market a decade ago.</p>
+<h2>What remains unconfirmed</h2>
+<ul><li>Whether mineral and acrylic ready-mixed products are counted together.</li><li>How shelf life was assessed.</li><li>Which regions drive demand.</li></ul>
+
+### 24
+TITLE: Acrylic plaster coating report tracks supply, demand and producers
+CAT: Market Research
+SRC: Market Research Reports
+URL: https://www.marketresearchreports.biz/reports/acrylic-plaster-coating-market
+CONF: Medium
+IMG: market
+STAND: A supply-and-demand report on acrylic plaster coatings names the producers it considers key — the most useful and the most contestable part of such reports.
+BODY:
+<p>Market Research Reports has published a study of global acrylic plaster coating supply, demand and key producers for 2026–2032.</p>
+<p>Producer lists are the part of these reports most likely to be wrong. They are compiled from trade directories, import data and company filings, and they systematically under-represent the small specialist manufacturers that dominate decorative finishes in Italy and Spain — the companies most of this directory is about.</p>
+<p>ArtCoatings has not verified the producer list or the volumes.</p>
+<h2>Why this matters</h2>
+<p>Being named — or omitted — in a widely bought market report affects how a manufacturer is perceived by distributors and investors who never visit a site or see a sample panel.</p>
+<h2>What remains unconfirmed</h2>
+<ul><li>How "key producers" was determined.</li><li>Whether decorative specialists are included alongside industrial producers.</li><li>The volumes attributed to each producer.</li></ul>
+
+### 25
+TITLE: Plaster faux finish coating report projects growth to 2031
+CAT: Market Research
+SRC: Market Research Reports
+URL: https://www.marketresearchreports.biz/reports/plaster-faux-finish-coating-market
+CONF: Medium
+IMG: market
+STAND: A report on plaster-based faux finish coatings projects growth to 2031, a segment where product and craft are hard to separate.
+BODY:
+<p>Market Research Reports has published a growth study of the global plaster faux finish coating market for 2025–2031.</p>
+<p>Segments that mix a material with a skill are difficult to measure. A plaster faux finish is sold as a product but delivered as labour, and the value sits partly in the applicator's hands. Reports that count only the material therefore understate the segment, sometimes substantially.</p>
+<p>ArtCoatings has not seen the methodology and does not reproduce the growth figures.</p>
+<h2>Why this matters</h2>
+<p>If the labour component is invisible in the data, the segment looks smaller and less attractive than it is to the people actually working in it — which is a standing argument for measuring applied finishes by project value rather than by litres.</p>
+<h2>What remains unconfirmed</h2>
+<ul><li>Whether application labour is included in the market value.</li><li>The split between mineral and acrylic systems.</li><li>The regions covered.</li></ul>
+
+### 26
+TITLE: Faux finish plaster market report published to 2034
+CAT: Market Research
+SRC: Dataintelo
+URL: https://www.dataintelo.com/report/faux-finish-plaster-market
+CONF: Medium
+IMG: market
+STAND: Another long-range report on faux finish plaster arrives at the segment from a different definition — one reason published sizes disagree.
+BODY:
+<p>Dataintelo has published a research report on the faux finish plaster market, projecting to 2034.</p>
+<p>Where several publishers cover the same named segment and reach different sizes, the difference is almost always definitional. One counts only plaster-based products, another includes acrylic glazes, a third includes the tools. None of them is necessarily wrong, and none of them can be compared directly with the others.</p>
+<p>ArtCoatings has not seen this report's segment definition.</p>
+<h2>Why this matters</h2>
+<p>Specifiers and distributors who quote market sizes in bids should quote the definition alongside the number. A figure without a segment boundary is not a fact, it is a marketing asset.</p>
+<h2>What remains unconfirmed</h2>
+<ul><li>Whether glazes and tools are included.</li><li>The base year and currency.</li><li>How the forecast was validated.</li></ul>
+
+### 27
+TITLE: Decorative coatings market forecast published for 2026–2034
+CAT: Market Research
+SRC: IMARC Group
+URL: https://www.imarcgroup.com/decorative-coatings-market
+CONF: Medium
+IMG: market
+STAND: IMARC's decorative coatings forecast covers size, share, trends and outlook to 2034 for the sector this directory documents.
+BODY:
+<p>IMARC Group has published a decorative coatings market report covering size, share, trends and forecast to 2034.</p>
+<p>Decorative coatings is the broadest of the segments covered in this news section: it takes in architectural paint, wood coatings for interior joinery, and in some definitions the decorative plasters and finishes that most of the companies in this directory make. That breadth is exactly why published sizes for "decorative coatings" differ by so much between publishers.</p>
+<p>ArtCoatings has not seen the methodology and does not reproduce the figures.</p>
+<h2>Why this matters</h2>
+<p>Breadth hides the specialist. A market described at this level will show the multinational paint groups and will not show the Italian lime plaster specialist — yet both are real businesses, and only one of them is visible in the number.</p>
+<h2>What remains unconfirmed</h2>
+<ul><li>Whether mineral and lime finishes are inside the definition.</li><li>The regional breakdown.</li><li>How share was estimated.</li></ul>
+
+### 28
+TITLE: Texture paint market report gives year-on-year growth to 2033
+CAT: Market Research
+SRC: Coherent Market Insights
+URL: https://www.coherentmarketinsights.com/market-insight/texture-paint-market-5243
+CONF: Medium
+IMG: market
+STAND: A texture paint study publishes year-on-year growth rates to 2033 — the granularity that makes a forecast easier to test and easier to misuse.
+BODY:
+<p>Coherent Market Insights has published a texture paint market study with year-on-year growth rates to 2033.</p>
+<p>Year-on-year figures look precise, and that precision is mostly presentational. A compound rate split into annual steps implies more knowledge about timing than most coatings forecasts contain — demand in this segment follows construction and repainting cycles that are notoriously hard to date in advance.</p>
+<p>ArtCoatings has not verified the rates.</p>
+<h2>Why this matters</h2>
+<p>Annualised numbers get quoted in business plans. Treating them as a range rather than a schedule is the safer reading, and it is how most manufacturers actually plan capacity.</p>
+<h2>What remains unconfirmed</h2>
+<ul><li>How the annual path was derived from the headline rate.</li><li>Whether the segment includes applied plaster textures.</li><li>The regions weighted most heavily.</li></ul>

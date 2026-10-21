@@ -33,6 +33,37 @@ while ( have_posts() ) : the_post();
 
 		<div class="prose"><?php the_content(); ?></div>
 
+		<?php
+		$src_url  = ac_news_source_url();
+		$conf     = ac_news_confidence();
+		?>
+		<section class="panel panel--note">
+			<h2 class="panel__title">Source &amp; editorial note</h2>
+			<dl class="note-list">
+				<div class="note-list__row">
+					<dt data-i18n="Source">Source</dt>
+					<dd><?php echo $source ? esc_html( $source ) : 'Not stated'; ?></dd>
+				</div>
+				<div class="note-list__row">
+					<dt data-i18n="Source reliability">Source reliability</dt>
+					<dd><?php echo $conf ? esc_html( $conf ) : 'Not assessed'; ?></dd>
+				</div>
+				<div class="note-list__row">
+					<dt data-i18n="Last reviewed">Last reviewed</dt>
+					<dd><time datetime="<?php echo esc_attr( get_the_modified_date( 'c' ) ); ?>"><?php echo esc_html( get_the_modified_date( 'Y-m-d' ) ); ?></time></dd>
+				</div>
+			</dl>
+			<?php if ( $src_url ) : ?>
+				<p class="note-text">
+					<a class="note-link" href="<?php echo esc_url( $src_url ); ?>" target="_blank" rel="nofollow noopener" data-i18n="Read the original report">Read the original report</a>
+					<span class="note-text__muted"> — external site, in the source publisher's own words.</span>
+				</p>
+			<?php endif; ?>
+			<p class="note-text note-text__muted">
+				This article is a summary prepared by the ArtCoatings editorial desk from the source named above. It is second-hand reporting: figures, dates and quotations are reproduced as published by the source and have not been independently verified unless stated in the text.
+			</p>
+		</section>
+
 		<footer class="article__foot">
 			<a class="btn btn--ghost-dark" href="<?php echo esc_url( get_post_type_archive_link( 'ac_news' ) ); ?>">&larr; Back to news</a>
 		</footer>

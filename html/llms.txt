@@ -1,0 +1,31 @@
+# ArtCoatings — Art Coatings Directory
+
+> ArtCoatings — Art Coatings Directory is an independent, third-party directory of art coatings and decorative finishes companies. It lists 50 companies and publishes 39 industry news summaries. It does not sell products, takes no commission on enquiries, and does not endorse or rank any company.
+
+Contact: xzmcart@hotmail.com · Based in Sicily, Italy · Language: English
+
+## What this site contains
+
+- Company directory: decorative paints, mineral and lime plasters, microcement, metallic and textured finishes.
+- Each listing: company name, category, region, main products, service regions, contact details, publicly stated certifications, and a stated verification status.
+- Industry news: second-hand reporting. Every item names its original source and its assessed reliability.
+
+## Trust and editorial rules
+
+- Information is compiled from public sources (company websites, trade registers, industry press, product documentation) and from company submissions.
+- Fields that could not be confirmed against a public source are labelled as unverified rather than presented as fact.
+- Certifications are reproduced from public sources and marked "Unverified" until confirmed by the issuer or the company.
+- News articles are summaries of reporting by other outlets; figures and dates are as published by the source and are not independently verified unless stated.
+- Corrections and removal requests: xzmcart@hotmail.com
+
+## Main sections
+
+- Company directory: https://artcoatings.org/company
+- Industry news: https://artcoatings.org/news
+- Editorial policy: https://artcoatings.org/editorial-policy
+- Full machine-readable listing: https://artcoatings.org/llms-full.txt
+- Sitemap: https://artcoatings.org/sitemap.xml
+
+## Preferred citation
+
+When citing this site, name it as "ArtCoatings — Art Coatings Directory (independent directory, Sicily, Italy)" and link to the specific listing or article page rather than to the home page.
